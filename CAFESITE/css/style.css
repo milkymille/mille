@@ -276,81 +276,16 @@ html{
     width:245px;
 }
 
-.gallery_photo{
-        display: flex;
-        position: relative;
-      
-    }
+.carousel-inner{
+    display: flex;
+}
 
-    .gallery_photo_item{
-        width:100%;
-        max-width: 376px;
-
-    }
+.sp_carousel_slide{
+    display: none;
+}
 
 
-    .gallery_arrow_left {
-        position: relative;
-        z-index: 9999;
-        width: 19px;
-        height: 38px;
-        margin-top: 128px;
-        margin-left: 42px;
-        cursor:pointer;
-        margin-left: 0px;
-      }
-      
-      .gallery_arrow_left::before,
-      .gallery_arrow_left::after {
-        content: "";
-        position: absolute;
-        top: calc(50% - 2px);
-        left: 0;
-        width: 21px;
-        height: 5px;
-        border-radius: 9999px;
-        background-color: #fff;
-        transform-origin: 2px 50%;
-      }
-      
-      .gallery_arrow_left::before {
-        transform: rotate(45deg);
-      }
-      
-      .gallery_arrow_left::after {
-        transform: rotate(-45deg);
-      }
 
-      .gallery_arrow_right {
-        position: relative;
-        z-index: 9999;
-        width: 19px;
-        height: 38px;
-        margin-top: 128px;
-        margin-right: 42px;
-        cursor:pointer;
-      }
-      
-      .gallery_arrow_right::before,
-      .gallery_arrow_right::after {
-        content: "";
-        position: absolute;
-          top: calc(50% - 2px);
-          right: 0;
-          width: 21px;
-          height: 5px;
-          border-radius: 9999px;
-          background-color: #fff;
-          transform-origin: calc(100% - 2px) 50%;
-      }
-      
-      .gallery_arrow_right::before {
-        transform: rotate(45deg);
-      }
-      
-      .gallery_arrow_right::after {
-        transform: rotate(-45deg);
-      }
 /* イベント */
 
 .event{
@@ -721,6 +656,14 @@ html{
     width: 142px;
     margin: 0 auto;
     margin-bottom: 21px;
+}
+
+.carousel_slide{
+    display: none;
+}
+
+.sp_carousel_slide{
+    display: block;
 }
 
 

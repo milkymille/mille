@@ -176,31 +176,137 @@
                 <img src="images/gallery@2x.png" alt="ギャラリー" />
             </h2>
 
-            <div class="gallery_photo">
-                <p class="gallery_photo_item">
-                    <img src="images/pc_gallary_03-100.jpg" alt="ギャラリー3" />
-                </p>
-                <p class="gallery_photo_item">
-                    <img
-                        src="images/pc_gallary_05-100.jpg"
-                        alt="ギャラリー５"
-                    />
-                </p>
-                <p class="gallery_photo_item">
-                    <img src="images/pc_gallary_04-100.jpg" alt="ギャラリー4" />
-                </p>
-                <p class="gallery_photo_item">
-                    <img src="images/pc_gallary_03-100.jpg" alt="ギャラリー3" />
-                </p>
-                <p class="gallery_photo_item">
-                    <img src="images/pc_gallary_02-100.jpg" alt="ギャラリー2" />
-                </p>
-                <p class="gallery_photo_item">
-                    <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー1" />
-                </p>
+            <!-- PC版ギャラリー -->
+            <div id="slide_wrap" class="carousel_slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img
+                            src="images/pc_gallary_03-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリ-4"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/pc_gallary_05-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー５"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/pc_gallary_04-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー4"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/pc_gallary_03-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー3"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/pc_gallary_02-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー2"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/pc_gallary_01-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー1"
+                        />
+                    </div>
+                </div>
+                <button
+                    type="button"
+                    class="carousel-control-prev"
+                    data-bs-target="#slide_wrap"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                    type="button"
+                    class="carousel-control-next"
+                    data-bs-target="#slide_wrap"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
 
-                <div class="gallery_arrow_left"><span></span></div>
-                <div class="gallery_arrow_right"><span></span></div>
+            <!-- スマホ版ギャラリー -->
+
+            <div
+                id="sp_slide_wrap"
+                class="sp_carousel_slide"
+                data-bs-ride="carousel"
+            >
+                <div class="sp_carousel-inner">
+                    <div class="ps_carousel-item">
+                        <img
+                            src="images/pc_gallary_03-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリ-4"
+                        />
+                    </div>
+                    <div class="sp_carousel-item">
+                        <img
+                            src="images/pc_gallary_05-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー５"
+                        />
+                    </div>
+                    <div class="sp_carousel-item">
+                        <img
+                            src="images/pc_gallary_04-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー4"
+                        />
+                    </div>
+                    <div class="sp_carousel-item">
+                        <img
+                            src="images/pc_gallary_03-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー3"
+                        />
+                    </div>
+                    <div class="sp_carousel-item">
+                        <img
+                            src="images/pc_gallary_02-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー2"
+                        />
+                    </div>
+                    <div class="sp_carousel-item">
+                        <img
+                            src="images/pc_gallary_01-100.jpg"
+                            class="img-gallery"
+                            alt="ギャラリー1"
+                        />
+                    </div>
+                </div>
+                <button
+                    type="button"
+                    class="carousel-control-prev"
+                    data-bs-target="#slide_wrap"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                    type="button"
+                    class="carousel-control-next"
+                    data-bs-target="#slide_wrap"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </section>
 
@@ -290,28 +396,13 @@
                 });
             });
 
-            // $(".gallery_arrow_left").click(function () {
-            //     $(".gallery_photo_item : not(:animated)")
-            //         .prepend($(".gallery_photo_item : last-child"))
-            //         .css("margin-left" - 1 * $(".gallery_photo_item").width())
-            //         .animate({
-            //             "margin-left": 0,
-            //         });
-            //     });
-
-            //         $(".gallery_arrow_right").click(function () {
-            //     $("gallery_photo_item : not(:animated)")
-            //         .animate({'margin-left" : - 1 * $(".gallery_photo_item").width()
-            //         } ,function() {
-            //         $('gallery_photo_item').append($('.gallery_photo_item : firstchild")) ;
-            //         $('gallery_photo_item').css('margin-left' , '0') ;
-            //         });
-            //     });
-
-            $(".gallery_photo").slick({
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 6,
+            $(".gallery_arrow_left").click(function () {
+                $(".gallery_photo_item : not(:animated)")
+                    .prepend($(".gallery_photo_item : last-child"))
+                    .css("margin-left" - 1 * $(".gallery_photo_item").width())
+                    .animate({
+                        "margin-left": 0,
+                    });
             });
         </script>
     </body>
