@@ -176,138 +176,110 @@
                 <img src="images/gallery@2x.png" alt="ギャラリー" />
             </h2>
 
-            <!-- PC版ギャラリー -->
-            <div id="slide_wrap" class="carousel_slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
+        <!-- PC版ギャラリー -->
+        
+                <div class="carousel_inner">
+                    <div class="carousel_item">
                         <img
                             src="images/pc_gallary_03-100.jpg"
                             class="img-gallery"
                             alt="ギャラリ-4"
                         />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel_item">
                         <img
                             src="images/pc_gallary_05-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー５"
                         />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel_item">
                         <img
                             src="images/pc_gallary_04-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー4"
                         />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel_item">
                         <img
                             src="images/pc_gallary_03-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー3"
                         />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel_item">
                         <img
                             src="images/pc_gallary_02-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー2"
                         />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel_item">
                         <img
                             src="images/pc_gallary_01-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー1"
                         />
                     </div>
+                    <div class="pc_slide-arrow"></div>
+                            <div class="pc_prev-arrow"></div>
+                                <div class="pc_next-arrow"> </div>
+                                <div class="pc_button"> </div>
                 </div>
-                <button
-                    type="button"
-                    class="carousel-control-prev"
-                    data-bs-target="#slide_wrap"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button
-                    type="button"
-                    class="carousel-control-next"
-                    data-bs-target="#slide_wrap"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+            
 
             <!-- スマホ版ギャラリー -->
 
-            <div
-                id="sp_slide_wrap"
-                class="sp_carousel_slide"
-                data-bs-ride="carousel"
-            >
-                <div class="sp_carousel-inner">
-                    <div class="ps_carousel-item">
+         
+                <div class="sp_carousel_inner">
+                    <div class="ps_carousel_item">
                         <img
                             src="images/pc_gallary_03-100.jpg"
                             class="img-gallery"
                             alt="ギャラリ-4"
                         />
                     </div>
-                    <div class="sp_carousel-item">
+                    <div class="sp_carousel_item">
                         <img
                             src="images/pc_gallary_05-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー５"
                         />
                     </div>
-                    <div class="sp_carousel-item">
+                    <div class="sp_carousel_item">
                         <img
                             src="images/pc_gallary_04-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー4"
                         />
                     </div>
-                    <div class="sp_carousel-item">
+                    <div class="sp_carousel_item">
                         <img
                             src="images/pc_gallary_03-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー3"
                         />
                     </div>
-                    <div class="sp_carousel-item">
+                    <div class="sp_carousel_item">
                         <img
                             src="images/pc_gallary_02-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー2"
                         />
                     </div>
-                    <div class="sp_carousel-item">
+                    <div class="sp_carousel_item">
                         <img
                             src="images/pc_gallary_01-100.jpg"
                             class="img-gallery"
                             alt="ギャラリー1"
-                        />
-                    </div>
-                </div>
-                <button
-                    type="button"
-                    class="carousel-control-prev"
-                    data-bs-target="#slide_wrap"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button
-                    type="button"
-                    class="carousel-control-next"
-                    data-bs-target="#slide_wrap"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+                        /></div>
+                        <div class="slide-arrow"></div>
+                            <div class="prev-arrow"></div>
+                                <div class="next-arrow"> </div>
+                                <div class="button"> </div>
+              
+           
+           
         </section>
 
         <!-- イベント -->
@@ -389,20 +361,31 @@
                 });
                 // headerのスライダー
                 $(".slider").slick({
-                    // autoplay: true,
+                    autoplay: true,
                     dots: true,
                     autoplaySpeed: 2000,
                     arrows: false,
                 });
-            });
 
-            $(".gallery_arrow_left").click(function () {
-                $(".gallery_photo_item : not(:animated)")
-                    .prepend($(".gallery_photo_item : last-child"))
-                    .css("margin-left" - 1 * $(".gallery_photo_item").width())
-                    .animate({
-                        "margin-left": 0,
-                    });
+        
+
+                $(".carousel_inner").slick({
+                    autoplay: true,
+                    adaptiveHeight: true,
+                    prevArrow:
+                        '<img src="images/PC_yagirushi_l.png" class="slide-arrow prev-arrow">',
+                    nextArrow:
+                        '<img src="images/PC_yagirushi_r.png" class="slide-arrow next-arrow">',
+                        slidesToShow: 5,
+                });
+                $(".sp_carousel_inner").slick({
+                    autoplay: true,
+                    adaptiveHeight: true,
+                    prevArrow:
+                        '<img src="images/sp_yagirushi_l.png" class="slide-arrow prev-arrow">',
+                    nextArrow:
+                        '<img src="images/sp_yagirushi_r.png" class="slide-arrow next-arrow">',
+                });
             });
         </script>
     </body>

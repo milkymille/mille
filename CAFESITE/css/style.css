@@ -276,14 +276,36 @@ html{
     width:245px;
 }
 
-.carousel-inner{
-    display: flex;
+.carousel_inner{
+   
+    width: 100%;
 }
 
-.sp_carousel_slide{
+.carousel_item{
+    display: flex; 
+    
+}
+
+.sp_carousel_inner{
     display: none;
 }
 
+.pc_slide-arrow{
+    bottom: 0;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+
+.pc_prev-arrow{
+    margin-left:25px;
+}
+
+.pc_next-arrow{
+    margin-right:25px;
+}
 
 
 /* イベント */
@@ -658,12 +680,36 @@ html{
     margin-bottom: 21px;
 }
 
-.carousel_slide{
+.carousel_inner{
     display: none;
 }
 
-.sp_carousel_slide{
+.sp_carousel_inner{
     display: block;
+    margin: 0 auto;
+    max-width: 375px;
+    width: 100%;
+}
+
+.sp_carousel_item img{
+    width: 100%;
+}
+
+.slide-arrow{
+    bottom: 0;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+
+.prev-arrow{
+    margin-left:25px;
+}
+
+.next-arrow{
+    margin-right:25px;
 }
 
 
