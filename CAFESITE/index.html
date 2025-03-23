@@ -21,6 +21,21 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+        <!-- Lightbox2のスタイルシート -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css"
+            rel="stylesheet"
+        />
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            class="lightbox"
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+            type="text/javascript"
+        ></script>
+
         <!-- SlickのJS -->
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
@@ -176,110 +191,83 @@
                 <img src="images/gallery@2x.png" alt="ギャラリー" />
             </h2>
 
-        <!-- PC版ギャラリー -->
-        
-                <div class="carousel_inner">
-                    <div class="carousel_item">
+            <!-- PC版ギャラリー -->
+
+            <div class="carousel_inner">
+                <div class="carousel_item">
+                    <a
+                        href="images/pc_gallary_03-100.jpg"
+                        data-lightbox="carousel_item_big"
+                        data-title="カフェ店内"
+                    >
                         <img
                             src="images/pc_gallary_03-100.jpg"
                             class="img-gallery"
-                            alt="ギャラリ-4"
-                        />
-                    </div>
-                    <div class="carousel_item">
-                        <img
-                            src="images/pc_gallary_05-100.jpg"
-                            class="img-gallery"
-                            alt="ギャラリー５"
-                        />
-                    </div>
-                    <div class="carousel_item">
-                        <img
-                            src="images/pc_gallary_04-100.jpg"
-                            class="img-gallery"
-                            alt="ギャラリー4"
-                        />
-                    </div>
-                    <div class="carousel_item">
-                        <img
-                            src="images/pc_gallary_03-100.jpg"
-                            class="img-gallery"
-                            alt="ギャラリー3"
-                        />
-                    </div>
-                    <div class="carousel_item">
-                        <img
-                            src="images/pc_gallary_02-100.jpg"
-                            class="img-gallery"
-                            alt="ギャラリー2"
-                        />
-                    </div>
-                    <div class="carousel_item">
-                        <img
-                            src="images/pc_gallary_01-100.jpg"
-                            class="img-gallery"
-                            alt="ギャラリー1"
-                        />
-                    </div>
-                    <div class="pc_slide-arrow"></div>
-                            <div class="pc_prev-arrow"></div>
-                                <div class="pc_next-arrow"> </div>
-                                <div class="pc_button"> </div>
+                            alt="カフェ店内"
+                    /></a>
                 </div>
-            
-
-            <!-- スマホ版ギャラリー -->
-
-         
-                <div class="sp_carousel_inner">
-                    <div class="ps_carousel_item">
-                        <img
-                            src="images/pc_gallary_03-100.jpg"
-                            class="img-gallery"
-                            alt="ギャラリ-4"
-                        />
-                    </div>
-                    <div class="sp_carousel_item">
+                <div class="carousel_item">
+                    <a
+                        href="images/pc_gallary_05-100.jpg"
+                        data-lightbox="carousel_item_big"
+                        data-title="店内席"
+                    >
                         <img
                             src="images/pc_gallary_05-100.jpg"
                             class="img-gallery"
-                            alt="ギャラリー５"
-                        />
-                    </div>
-                    <div class="sp_carousel_item">
+                            alt="店内席"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="images/pc_gallary_04-100.jpg"
+                        data-lightbox="carousel_item_big"
+                        data-title="コーヒー豆"
+                    >
                         <img
                             src="images/pc_gallary_04-100.jpg"
                             class="img-gallery"
-                            alt="ギャラリー4"
-                        />
-                    </div>
-                    <div class="sp_carousel_item">
+                            alt="コーヒー豆"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="images/pc_gallary_03-100.jpg"
+                        data-lightbox="carousel_item_big"
+                        data-title="カフェ店内"
+                    >
                         <img
                             src="images/pc_gallary_03-100.jpg"
                             class="img-gallery"
-                            alt="ギャラリー3"
-                        />
-                    </div>
-                    <div class="sp_carousel_item">
+                            alt="カフェ店内"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="images/pc_gallary_02-100.jpg"
+                        data-lightbox="carousel_item_big"
+                        data-title="CAFE"
+                    >
                         <img
                             src="images/pc_gallary_02-100.jpg"
                             class="img-gallery"
-                            alt="ギャラリー2"
+                            alt="CAFE"
                         />
-                    </div>
-                    <div class="sp_carousel_item">
+                    </a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="images/pc_gallary_01-100.jpg"
+                        data-lightbox="carousel_item_big"
+                        data-title="カフェラテ"
+                    >
                         <img
                             src="images/pc_gallary_01-100.jpg"
                             class="img-gallery"
-                            alt="ギャラリー1"
-                        /></div>
-                        <div class="slide-arrow"></div>
-                            <div class="prev-arrow"></div>
-                                <div class="next-arrow"> </div>
-                                <div class="button"> </div>
-              
-           
-           
+                            alt="カフェラテ"
+                    /></a>
+                </div>
+            </div>
         </section>
 
         <!-- イベント -->
@@ -359,6 +347,7 @@
                     $(".hamburger").toggleClass("open");
                     $(".sp-nav").fadeToggle();
                 });
+
                 // headerのスライダー
                 $(".slider").slick({
                     autoplay: true,
@@ -367,24 +356,27 @@
                     arrows: false,
                 });
 
-        
-
                 $(".carousel_inner").slick({
                     autoplay: true,
                     adaptiveHeight: true,
                     prevArrow:
-                        '<img src="images/PC_yagirushi_l.png" class="slide-arrow prev-arrow">',
+                        '<img src="images/PC_prev@2x.png" class="slide-arrow prev-arrow">',
                     nextArrow:
-                        '<img src="images/PC_yagirushi_r.png" class="slide-arrow next-arrow">',
-                        slidesToShow: 5,
-                });
-                $(".sp_carousel_inner").slick({
-                    autoplay: true,
-                    adaptiveHeight: true,
-                    prevArrow:
-                        '<img src="images/sp_yagirushi_l.png" class="slide-arrow prev-arrow">',
-                    nextArrow:
-                        '<img src="images/sp_yagirushi_r.png" class="slide-arrow next-arrow">',
+                        '<img src="images/PC_next@2x.png" class="slide-arrow next-arrow">',
+                    slidesToShow: 5,
+
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 1,
+                                prevArrow:
+                                    '<img src="images/SP_p@2x.png" class="slide-arrow prev-arrow">',
+                                nextArrow:
+                                    '<img src="images/SP_n@2x.png" class="slide-arrow next-arrow">',
+                            },
+                        },
+                    ],
                 });
             });
         </script>
