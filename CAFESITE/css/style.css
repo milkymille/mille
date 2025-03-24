@@ -698,10 +698,9 @@ html{
     right: 18px;
 }
 
-.lightbox{ 
-    display: none;
- }
-
+.carousel_item a {
+    pointer-events: none;
+}
 
     /* イベント */
 .event{
