@@ -1,0 +1,498 @@
+/* 修正済みCSS */
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #f0faff;
+}
+
+.hamburger,
+.sp-nav {
+    display: none;
+}
+
+.header {
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 2.77%;
+    padding-right: 6.94%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.logo img {
+    width: 80px;
+}
+
+
+.pc-nav ul {
+    display: flex;
+    gap: 50px;                /* メニューの間隔 */
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .pc-nav li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pc-nav li a {
+    display: inline-block;
+    transform: rotate(90deg);     /* 横書き→縦向きに見せる */
+    transform-origin: left top;   /* 起点を調整 */
+    font-size: 14px;
+    font-weight: bold;
+    color: #779293;
+    text-decoration: none;
+  }
+  
+  /* 縦線 */
+  .pc-nav li::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -10%;                         
+    width: 1px;
+    height: 50px;
+    background-color: #779293;
+  }
+
+picture {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.concept,
+.about,
+.skills,
+.works {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.concept {
+    margin-top: 209px;
+    margin-left: 220px;
+    height: 748px;
+}
+
+
+.concept_word_img img{
+    width: 479px;
+    margin-bottom: 69px;
+}
+
+.concept_word,
+.about_sentence {
+    font-size: 16px;
+    color: #779293;
+    text-align: left;
+}
+
+.concept_word{
+    width: 774px;
+    margin-left:112px ;
+}
+
+.about {
+    height: 1117px;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+.about_word_img,
+.about_img1,
+.about_img2,
+.about_img3 {
+    position: absolute;
+}
+
+.about_word_img img{
+    width:  112px;
+    margin-left: 210px;
+    position: relative; 
+    z-index: 100;
+
+}
+.about_img1 img{
+    margin-top: 337px;
+    margin-left: 120px;
+    width: 280px;
+}
+
+.about_img2 img{
+    margin-top:50px;
+    margin-left: 440px;
+    width: 560px;
+    z-index: 2;
+}
+
+.about_img3 img{
+    margin-top: 100px;
+    margin-left: 917px;
+    right: 100px;
+    width: 423px;
+    z-index: 3;
+}
+
+.about_sentence {
+    margin-right: 220px;
+    width:630px
+}
+
+
+.view_more_about {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+    margin-top: 907px;
+}
+
+.view_more_about img{
+    width: 142px;
+}
+
+
+.skills{
+    height: 792px;
+    margin-right: 220px;
+    margin-right: 220px;
+}
+
+
+.skills_word_img img{
+    width: 304px;
+    margin-left: 210px;
+    margin-bottom: 108px;
+}
+
+
+.view_more_skills img{
+    width: 142px;
+
+}
+
+.skills_photo_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 220px;
+}
+
+.skills_photo_list{
+    width: 30%;
+}
+
+.skills_photo img{
+    width: 206px;
+
+}
+
+
+.view_more_skills {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 57px;
+}
+
+
+.works{
+    height: 890px;
+    max-width: 1440px;
+}
+
+.works_word_img img{
+    width:360px;
+    margin-left: 210px;
+    margin-bottom: 107px;
+}
+
+
+.carousel_item img{
+    height: 280px;
+}
+
+.carousel_inner{
+    display:flex;
+    position: relative;
+}
+
+/* 
+.prev-arrow{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    width: 19px;
+    left: 20%;
+    z-index: 999;
+}
+
+.next-arrow{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    width: 19px;
+    right: 20%;
+    z-index: 999;
+} */
+
+.view_more_works {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    margin-top: 57px;
+}
+
+.view_more_works img{
+    width: 142px;
+}
+
+
+.contact{
+    height: 700px;
+}
+
+.contact_word_img img{
+    width: 670px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 1px solid #bce3e2;
+    border-bottom: 1px solid #bce3e2;
+    padding: 24px 0px 24px 0px;
+    color: #bce3e2;
+    max-width: 1315px;
+    margin: 0 auto;
+    height: 92px;
+  }
+  
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+
+  .footer-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav li {
+    color: #bce3e2;
+    font-size: 18px;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #9ec6c8;
+  }
+  
+  .footer-right img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-left{
+    margin-left: 69px;
+  }
+  
+
+  /* ＝＝２階層目以降＝＝＝＝＝＝＝＝ */
+
+.subpage {
+    background: linear-gradient(to right, #f0faff 1000px, #e6f8ff 440px );
+  }
+
+  .logo_blue {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  
+  .logo_blue img {
+    width: 80px;
+  }
+
+    /* ＝＝ABOUT＝＝＝＝＝＝＝＝ */
+
+.about2{
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+.about2-1{
+    display: flex;
+    justify-content: center;
+    height: 1500px;
+}
+
+.about2_word img{
+    width: 7.8vw;
+    max-width: 112px;
+    margin-top: 30px;
+}
+
+.about_intro{
+    text-align: center;
+}
+
+.about_intro_photo img{
+    width: 33.8vw;
+    max-width: 487px;;
+}
+
+
+
+.about2-2{
+    display: flex;
+    height: 1828px;
+  }
+
+.about_strength_word img{
+    width: 4.1vw;
+    max-width: 60px;
+}
+
+
+.about_strength_photo img{
+    width:48.6vw;
+    max-width: 700px;
+}
+
+
+.about_strength_photo{
+    text-align: center;
+}
+
+.strength-line img{
+    width: 172px;
+    height: auto;
+}
+
+.strength-line_left img{
+    width: 172px;
+    height: auto;
+}
+
+.strength-line_left{   
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .strength-line {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .strength-line_left .line {
+    position: absolute;
+    left: 100%;
+    margin-left: 62px;
+    bottom: 15px;                
+    width: 53%;
+    height: 1px;
+    background-color: #c5efef;
+    width: 52.5vw;
+    max-width: 756px;
+    min-width: 180px;
+  }
+
+  .strength-line_left {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .strength-line .line {
+    position: absolute;
+    left: 100%;
+    margin-left: 62px;
+    bottom: 15px;                
+    width: 53%;
+    height: 1px;
+    background-color: #c5efef;
+    width: 52.5vw;
+    max-width: 756px;
+    min-width: 180px;
+  }
+  .strength_left,
+  .strength_right{
+     width: 100%;
+  max-width: 680px;
+  box-sizing: border-box;
+  text-align: left;
+  }
