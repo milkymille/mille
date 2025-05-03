@@ -151,14 +151,12 @@ picture img{
 .concept_word{
     max-width: 774px;
     margin-left:220px ;
-    z-index: 100;
 }
 
 .about {
     max-width: 1440px;
     margin-bottom: 164px;
 }
-
 
 .about_img{ 
     display: flex;
@@ -215,7 +213,7 @@ picture img{
 
 .skills_word_img img{
     width: 304px;
-    margin-left: 210px;
+    margin-left: 220px;
     margin-bottom: 108px;
 }
 
@@ -230,7 +228,6 @@ picture img{
     display: flex;
     justify-content: center;  /* 中央揃え */
     gap: 4.16%;               /* ← 画像の間に4.16%の余白 */
-    margin-left: 0;
       }
 
 
@@ -425,7 +422,8 @@ footer {
 .about_intro_sentence{
     margin-top: 33px;
     max-width: 640px;
-    text-align: center;
+    margin: 0 auto;
+    text-align: left;
 }
 
     /* ＝＝about【strength】＝＝＝＝＝＝＝＝ */
@@ -457,7 +455,7 @@ footer {
 
 
 .about_strength_photo{
-    text-align: center;
+    margin: 0 auto;
 }
 
 .strength01,
@@ -568,7 +566,7 @@ footer {
   }
 
   .yazirushi{
-    align-items: center;
+    margin: 0 auto;
     margin-bottom: 70px;
   }
 
