@@ -5,71 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
-        <script>
-            (function (d) {
-                var config = {
-                        kitId: "chk7drm",
-                        scriptTimeout: 3000,
-                        async: true,
-                    },
-                    h = d.documentElement,
-                    t = setTimeout(function () {
-                        h.className =
-                            h.className.replace(/\bwf-loading\b/g, "") +
-                            " wf-inactive";
-                    }, config.scriptTimeout),
-                    tk = d.createElement("script"),
-                    f = false,
-                    s = d.getElementsByTagName("script")[0],
-                    a;
-                h.className += " wf-loading";
-                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-                tk.async = true;
-                tk.onload = tk.onreadystatechange = function () {
-                    a = this.readyState;
-                    if (f || (a && a != "complete" && a != "loaded")) return;
-                    f = true;
-                    clearTimeout(t);
-                    try {
-                        Typekit.load(config);
-                    } catch (e) {}
-                };
-                s.parentNode.insertBefore(tk, s);
-            })(document);
-        </script>
-
-        <script>
-            (function (d) {
-                var config = {
-                        kitId: "chk7drm",
-                        scriptTimeout: 3000,
-                        async: true,
-                    },
-                    h = d.documentElement,
-                    t = setTimeout(function () {
-                        h.className =
-                            h.className.replace(/\bwf-loading\b/g, "") +
-                            " wf-inactive";
-                    }, config.scriptTimeout),
-                    tk = d.createElement("script"),
-                    f = false,
-                    s = d.getElementsByTagName("script")[0],
-                    a;
-                h.className += " wf-loading";
-                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-                tk.async = true;
-                tk.onload = tk.onreadystatechange = function () {
-                    a = this.readyState;
-                    if (f || (a && a != "complete" && a != "loaded")) return;
-                    f = true;
-                    clearTimeout(t);
-                    try {
-                        Typekit.load(config);
-                    } catch (e) {}
-                };
-                s.parentNode.insertBefore(tk, s);
-            })(document);
-        </script>
+    
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -86,7 +22,7 @@
                         <li><a href="#CONTACT">CONTACT</a></li>
                     </ul>
                 </nav>
-                <div class="hamburger"><span></span></div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
                 <nav class="sp-nav">
                     <ul>
                         <li><a href="#CONCEPT">CONCEPT</a></li>
@@ -150,6 +86,32 @@
                     >
                 </li>
             </div>
+            <div class="works_contents_wrap_sh">
+                <div class="works_contents_sh">
+                    <div class="works_contents_item_category_sh">ターゲット</div>
+                    <div class="works-line_sh"></div></div>
+                    <div class="works_contents_info_sh">経営者/会社員/お客様</div>
+                <div class="works_contents_sh">
+                    <div class="works_contents_item_category_sh">目的</div>
+                    <div class="works-line_sh"></div></div>
+                    <div class="works_contents_info_sh">モットーである、「お客様の大切な瞬間をサポートできる会社に」を表現した名刺ロゴを作成したい</div>
+                <div class="works_contents_sh">
+                    <div class="works_contents_item_category_sh">情報設計</div>
+                    <div class="works-line_sh"></div></div>
+                    <div class="works_contents_info_sh"></div>
+                <div class="works_contents_sh">
+                    <div class="works_contents_item_category_sh">デザイン</div>
+                    <div class="works-line_sh"></div></div>
+                    <div class="works_contents_info_sh">会社のコンセプトを基に自然をイメージするグリーンカラーをメインであしらい裏面は情報が見やすいようには文字の配置をして制作、裏面を縦にすると煙突のあるお家のシルエットに見えるようにユーモアの含めて制作しました</div>
+                <div class="works_contents_sh"><div class="works_contents_item_category_sh">使用ツール</div>
+                    <div class="works-line_sh"></div></div>
+                    <div class="works_contents_info_sh">Illustrator</div>
+                <div class="works_contents_sh">
+                    <div class="works_contents_item_category_sh">制作期間</div>
+                    <div class="works-line_sh"></div></div>
+                    <div class="works_contents_info_sh">1週間</div>
+                </div>
+    
             <div class="backtoall">
                 <img src="Photo/BACKTOALL@2x.png" alt="backtoall" />
             </div>
@@ -157,7 +119,8 @@
 
         </section>
 
-        <footer class="footer">
+       
+        <footer class="footer-pc">
             <div class="footer-inner">
                 <nav class="footer-nav">
                     <ul>
@@ -175,8 +138,116 @@
                     <img src="Photo/instagram@2x.png" alt="Instagram" />
                 </div>
             </div>
-
+            <div class="footer_bottom_line"></div>
             <div class="footer-left">© 2025 MILKY</div>
         </footer>
+
+        <footer class="footer-sp">
+            <div class="footer-inner_sp">
+                <nav class="footer_nav-sp">
+                    <ul>
+                        <li><a href="#TOP">TOP</a></li>
+                        <li><a href="#CONCEPT">CONCEPT</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#SKILLS">SKILLS</a></li>
+                        <li><a href="#WORKS">WORKS</a></li>
+                        <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right_nav-sp">
+                    <span>FIND US ON</span>
+                    <img src="Photo/instagram@2x.png" alt="Instagram" />
+                </div>
+            </div>
+            <div class="footer_bottom_line_nav-sp"></div>
+            <div class="footer-left_nav-sp">© 2025 MILKY</div>
+        </footer>
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script>
+            document
+                .getElementById("hamburger")
+                .addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    document
+                        .querySelector(".sp-nav")
+                        .classList.toggle("active");
+                });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
     </body>
 </html>
