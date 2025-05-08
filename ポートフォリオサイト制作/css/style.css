@@ -111,6 +111,7 @@ body {
 picture {
     margin: 0 auto;
     display: block;
+    position: relative; 
 }
 
 picture img{
@@ -118,6 +119,17 @@ picture img{
     display: block;
 }
 
+.word {
+  position: absolute;  
+  top: 50%;            
+  left: 70%;           
+  transform: translate(-50%, -50%); /* 真ん中に寄せる */
+  z-index: 2;          
+  color: white;       
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* 背景に馴染むよう影をつける */
+}
 
 .concept,
 .about,
@@ -134,19 +146,22 @@ picture img{
 
 .concept {
     margin-top: 209px;
-    margin-left: 220px;
     margin-bottom: 240px;
 }
 
 
 .concept_word_img img{
     max-width: 470px;
-    margin-bottom: 29px;
+}
+
+.concept_word_img{
+  margin-bottom: 29px;
+  margin-left: 220px;
 }
 
 .concept_word{
   line-height: 2;
-  max-width: 84.6vw;
+  max-width: 774px;
   margin: 0 auto;
 }
 
@@ -610,6 +625,7 @@ footer {
   .skills-swiper {
     display: none;
   }
+
   
   .graphic img{
     width: 433px;
@@ -642,7 +658,7 @@ footer {
 
   .yazirushi{
     margin-bottom: 70px;
-    margin: 0 auto;
+    text-align: center;
   }
 
 
@@ -676,6 +692,8 @@ footer {
   
   .skills1-line {
     flex-grow: 1;
+    display: flex;
+    justify-content: end;
     height: 1px;
     background-color: #b7e4e3;
   }
@@ -785,6 +803,10 @@ button {
 }
 
 
+.br-sp {
+  display: none;
+}
+
 .form_item{
   display: flex;
   align-items: center;
@@ -796,6 +818,8 @@ button {
   display: flex;
   align-items: center; 
 }
+
+
 .form_send img{
   width: 94px;
 }
@@ -980,7 +1004,7 @@ button {
 }
 
 .works_220{
-  margin-left: 220px;
+  text-align: center;
   margin-bottom: 36px;
   font-size: 24px;
 }
@@ -991,10 +1015,21 @@ button {
 }
 
 
-.works_flyer_wrap{
+
+.works_flyer_wrap {
   display: flex;
-  justify-content: space-between;
-  margin: 0 245px 112px 245px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  max-width: 1000px; 
+  margin: 0 auto 111px;
+  padding: 0 30px;
+}
+
+.flyer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .works_flyer1_wrap{
@@ -1005,7 +1040,7 @@ button {
 }
 
 .logo_photo img{
-  width: 830px;
+  max-width: 830px;
 }
 
 .yazirushi1_left img{
@@ -1040,15 +1075,16 @@ button {
 }
 
 .works_title_tablet{
-  margin-left: 200px;
+  text-align: center;
   margin-bottom: 29px;
   font-size: 24px;
 }
 
 .works_tablet_wrap{
-  display: flex;
-  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
   align-items: center;
+  position: relative;
 }
 
 .meishi_wrap{
@@ -1059,7 +1095,21 @@ button {
   gap:50px
 }
 
+/* ＝＝＝＝スクロール＝＝＝ */
+.scroll_down img{
+  max-width: 22px;
+}
 
+.scroll_down{
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  right:-30px
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+/* ＝＝＝＝スマホのモックアップ＝＝＝ */
 .sh_mock-up img{
   width: 336px;
  }
@@ -1068,40 +1118,29 @@ button {
   margin-bottom: 112px;
   text-align: center;
 }
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+/* ＝＝＝＝タブレットのモックアップ＝＝＝ */
 .tablet_mock-up img{
-  width: 1000px;
+  max-width: 1000px;
 }
 .tablet_mock-up{
   margin-bottom: 112px;
   text-align: center;
 }
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
-.meishi_yoko_s img{
-  width: 301px;
+/* ＝＝＝＝ハヤシのモックアップ＝＝＝ */
+.hayashi_all img{
+  max-width: 1440px;
 }
 
-.mizuhiki img{
-  width: 1440px;
+.hayashi_all{
+  margin-bottom: 144px;
 }
-
-.mizuhiki{
-  width: 100%;
-}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 
-.meishi_yoko_s {
-  width: 200px;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-.meishi_yoko_s {
-  background-image: url("../Photo/hayashi1@2x.png");
-}
 
 .yazirushi_left img{
   width: 30px;
@@ -1139,17 +1178,10 @@ button {
 }
 
 .flyer_1 img{
-  width: 450px;
+  max-width: 450px;
 }
 
-.scroll_down img{
-  width: 22px;
-}
 
-.scroll_down{
-  align-self: center; 
-  padding-left: 62px;
-}
 
 /* 制作物したの説明書 */
 
@@ -1170,6 +1202,7 @@ button {
 .works_contents_wrap{
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .works_contents{
@@ -1190,6 +1223,7 @@ button {
 
 .works_contents_item_category{
   width: 90px;
+  text-align: center;
 
 }
 
@@ -1217,7 +1251,7 @@ button {
 
 
 .backtoall img{
-  width: 155px;
+  max-width: 155px;
 }
 
 
@@ -1360,22 +1394,24 @@ button {
   
   .concept {
       margin-top: 82px;
-      margin-left: 30px;
       margin-bottom: 58px;
   }
   
   
   .concept_word_img img{
       max-width: 188px;
-      margin-bottom: 69px;
   }
   
+  .concept_word_img{
+    margin-bottom: 39px;
+    margin-left: 30px;
+}
 
   .concept_word{
     line-height: 2.9;
-    margin-left:30px ;
-    margin-right: 30px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-left:30px;
+    margin-right:30px;
     
   }
   
@@ -1471,6 +1507,8 @@ button {
       max-width: 142px;
   }
   
+
+  /* TOPページ部分スキル */
   .skills{
     margin-bottom: 119px;
 }
@@ -1488,28 +1526,38 @@ button {
   display: none; 
 }
 
+/* TOPページ部分スキルスワイパー */
+
 .skills-swiper {
   display: block;
   width: 100%;
-  max-width: 330px;
+  max-width:260px;
   margin: 0 auto;
+}
+
+.skills-swiper img {
+  max-width:260px;
 }
 
 .swiper-slide{
   width: 100%;
 }
 
-.swiper-button-prev{
-  display: flex;
-  justify-content: flex-start;
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 70% ;
+  transform: translateY(-50%) ;
+  z-index: 10 ;
 }
 
-
-.swiper-button-next{
-  display: flex;
-  justify-content: flex-start;
+.swiper-button-prev {
+  left: 10px ;
 }
 
+.swiper-button-next {
+  right: 10px ;
+}
 .view_more_skills img{
   width: 142px;
 
@@ -1632,7 +1680,7 @@ button {
 .about2{
     margin-left: 30px;
     margin-right: 30px;
-    max-width: 390px;
+    max-width: 100%;
     margin-bottom: 124px;
 }
 
@@ -1675,7 +1723,7 @@ button {
 .about2-2{
     margin-left: 30px;
     margin-right: 30px;
-    max-width: 390px;
+    max-width: 100%;
     margin-bottom: 166px;
 }
 
@@ -1744,7 +1792,7 @@ button {
 
 
 .skills2{
-  max-width: 390px;
+  max-width: 100%;
   margin-right: 30px;
   margin-left: 30px;
   margin-bottom: 111px;
@@ -1856,7 +1904,7 @@ button {
 
 
 .contact2{
-  max-width: 390px;
+  max-width: 100%;
 }
 
 .contact_warp{
@@ -1867,24 +1915,24 @@ button {
   width: 191px;
 }
 .contact_word_img{
-  margin-left: 30px;
+  margin-left: auto;
   margin-bottom: 72px;
+  text-align: center;
 }
 
 .contact_sentece{
   height: 1.44;
   margin-bottom: 64px;
-  max-width: 280px;
 }
 
 
 .contact_warp input{
-  width: 330px;
+  width: 100%;
   height: 34px;
 }
 
 .contact_warp textarea{
-  width: 330px;
+  width: 100%;
   height:  175px;
 }
 
@@ -1900,14 +1948,18 @@ text-align: left;
 }
 
 select {
-width: 330px;
+width: 100%;
 }
 
-
+/* スマホだけ改行 */
+.br-sp {
+  display: block;
+}
 
 .form_item{
 display: block;
 margin-bottom: 40px;
+width: 100%;
 
 }
 
@@ -2015,6 +2067,7 @@ margin-top: 81px;
 
 .works_contents_wrap_sh{
   display: block;
+  margin-bottom: 51px;
 }
 
 /* ＝＝＝スマホバナーモックアップ＝＝＝ */
@@ -2070,7 +2123,6 @@ margin-top: 81px;
 
  
   .works_220{
-    margin-left: 220px;
     margin-bottom: 36px;
     font-size: 24px;
   }
@@ -2080,14 +2132,11 @@ margin-top: 81px;
   }
   
 
-  .works_title_tablet_wrap{
-    display: flex;
-    justify-content: space-between;
-  }
+
   
   .works-line_sh{
     flex-grow: 1;
-    max-width: 300px;
+    max-width: 100%;
     height: 1px;
     display: flex;
     justify-content: flex-end;
@@ -2108,22 +2157,19 @@ margin-top: 81px;
 
 
   .works_flyer_wrap{
-    flex-direction: row;
-    justify-content: center;
+    margin-bottom: 98px;
   }
-  .flyer {
-    width: calc(50% - 50px);
-  }
+  
 
 
 .flyer img {
-  width: 330px;
+  max-width: 330px;
   display: block;
 }
   
   
   .logo_photo img{
-    width: 830px;
+    width: 100%;
   }
   
   .yazirushi1_left img{
@@ -2158,16 +2204,12 @@ margin-top: 81px;
   }
   
   .works_title_tablet{
-    margin-left: 200px;
     margin-bottom: 29px;
-    font-size: 24px;
+    font-size: 20px;
   }
   
-  .works_tablet_wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+
   
   .meishi_wrap{
     display: block;
@@ -2186,40 +2228,26 @@ margin-top: 81px;
   
   /* タブレットモックアップ */
   .tablet_mock-up img{
-    width: 1000px;
+    max-width: 100%;
   }
-
   .tablet_mock-up{
-    margin-bottom: 112px;
-    text-align: center;
+    margin-bottom: 97px;
   }
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* ＝＝＝＝ハヤシのモックアップ＝＝＝ */
+.hayashi_all img{
+  max-width: 100%;
+}
+
+.hayashi_all{
+  margin-bottom: 86px;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
   
-  .meishi_yoko_s img{
-    width: 301px;
-  }
-  
-  .mizuhiki img{
-    width: 1440px;
-  }
-  
-  .mizuhiki{
-    width: 100%;
-  }
-  
-  
-  .meishi_yoko_s {
-    width: 200px;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  
-  .meishi_yoko_s {
-    background-image: url("../Photo/hayashi1@2x.png");
-  }
-  
+
   .yazirushi_left img{
     width: 30px;
   }
@@ -2256,17 +2284,13 @@ margin-top: 81px;
   }
   
   .flyer_1 img{
-    width: 330px;
+    max-width: 100%;
   }
   
   .scroll_down img{
     width: 18px;
   }
   
-  .scroll_down{
-    align-self: center; 
-    padding-left: 62px;
-  }
   
   .works_contents_wrap{
    display: none;
@@ -2275,10 +2299,7 @@ margin-top: 81px;
   
   
    
-/* 制作一覧に戻る */
-  .backtoall img{
-    width: 150px;
-  }  
+
   /* 制作一覧に戻る */
   .backtoall{
     margin-right: 30px;

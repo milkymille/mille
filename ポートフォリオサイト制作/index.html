@@ -12,6 +12,10 @@
         />
 
         <!-- Swiper JS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
@@ -53,7 +57,7 @@
                     <img src="Photo/header.png" alt="海の写真" />
                 </picture>
 
-                <p class="word">心に届ける 想いをカタチに</p>
+                <p class="word">心に届ける<br /><br />想いをカタチに</p>
             </div>
         </header>
 
@@ -127,7 +131,7 @@
             </div>
 
             <!-- スマホ版：カルーセル -->
-            <div class="skills-swiper">
+            <div class="swiper skills-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="Photo/graphic.png" alt="graphic" />
@@ -253,6 +257,16 @@
             <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
         <script>
             (function (d) {
                 var config = {
@@ -328,16 +342,6 @@
                         .querySelector(".sp-nav")
                         .classList.toggle("active");
                 });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper(".swiper", {
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
         </script>
     </body>
 </html>
