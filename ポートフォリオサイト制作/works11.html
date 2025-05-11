@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -36,20 +38,38 @@
         <section class="works2-1">
             <h4 class="works_220">カステラショップ【蘭】<span class="br-sp"></span>SHOP CARD ＆ LOGO</h4>
 
-            <div class="meishi_wrap">
-            <div class="yazirushi_left">
-                <img src="Photo/yazirushi3@2x.png" alt="yazirushi_left" />
+            <div class="swiper meishi_swiper">
+                <div class="swiper-wrapper">
+                   
+                  <!-- 1 -->
+                  <div class="swiper-slide">
+                    <div class="meishi_wrap">
+                    <div class="meishi_omote">
+                      <img src="Photo/2x/RAN1@2x.png" alt="名刺 表">
+                    </div> 
+                    <div class="meishi_ura">
+                        <img src="Photo/2x/RAN2@2x.png" alt="名刺 裏">
+                      </div></div>
+                  </div>
+              
+                  <!-- 2 -->
+                  <div class="swiper-slide">
+                    <div class="logo_meaning">
+                      <img src="Photo/rablogo@2x.png" alt="logo">
+                    </div>
+                  </div>
+              
+                
             </div>
-            <div class="meishi_omote">
-                <img src="Photo/2x/RAN1@2x.png" alt="meishi" />
-            </div>
-            <div class="meishi_ura">
-                <img src="Photo/2x/RAN2@2x.png" alt="meishi" />
-            </div>
-            <div class="yazirushi_right">
-                <img src="Photo/yazirushi4@2x.png" alt="yazirushi_right" />
-            </div>
-            </div>
+                <!-- 矢印ナビゲーション -->
+                <div class="swiper2-prev">
+                    <img src="Photo/yazirushi3@2x.png" alt="prev arrow" />
+                  </div>
+                  <div class="swiper2-next">
+                    <img src="Photo/yazirushi4@2x.png" alt="next arrow" />
+                  </div>
+              </div>
+            
             <div class="works_contents_wrap">
                 <ul class="works_contents">
                     <li class="works_contents_item"><span class="works_contents_item_category">
@@ -244,5 +264,18 @@
                 },
             });
         </script>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            const meishiSwiper = new Swiper('.meishi_swiper', {
+              loop: true,
+              slidesPerView: 1,
+              spaceBetween: 0,
+              centeredSlides: false,
+              navigation: {
+              nextEl: '.swiper2-next',
+              prevEl: '.swiper2-prev',
+              },
+            });
+          </script>
     </body>
 </html>

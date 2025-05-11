@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mill Design portfolio site</title>
         <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Swiper CSS -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
-
-        <!-- Swiper JS -->
         <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
         <header class="header" id="header">
@@ -143,8 +143,12 @@
                         <img src="Photo/coding.png" alt="coding" />
                     </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="custom-prev">
+                    <img src="Photo/yazirushi3@2x.png" alt="prev" />
+                </div>
+                <div class="custom-next">
+                    <img src="Photo/yazirushi4@2x.png" alt="next" />
+                </div>
             </div>
             <div class="view_more_skills">
                 <img src="Photo/viewmore.png" alt="view more" />
@@ -259,45 +263,17 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
-            const swiper = new Swiper(".swiper", {
+            const swiper = new Swiper(".skills-swiper", {
                 loop: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                watchOverflow: true,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".custom-next",
+                    prevEl: ".custom-prev",
                 },
             });
-        </script>
-        <script>
-            (function (d) {
-                var config = {
-                        kitId: "chk7drm",
-                        scriptTimeout: 3000,
-                        async: true,
-                    },
-                    h = d.documentElement,
-                    t = setTimeout(function () {
-                        h.className =
-                            h.className.replace(/\bwf-loading\b/g, "") +
-                            " wf-inactive";
-                    }, config.scriptTimeout),
-                    tk = d.createElement("script"),
-                    f = false,
-                    s = d.getElementsByTagName("script")[0],
-                    a;
-                h.className += " wf-loading";
-                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-                tk.async = true;
-                tk.onload = tk.onreadystatechange = function () {
-                    a = this.readyState;
-                    if (f || (a && a != "complete" && a != "loaded")) return;
-                    f = true;
-                    clearTimeout(t);
-                    try {
-                        Typekit.load(config);
-                    } catch (e) {}
-                };
-                s.parentNode.insertBefore(tk, s);
-            })(document);
         </script>
 
         <script>

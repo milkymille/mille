@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -34,17 +36,13 @@
             </div>
         </header>
         <section class="works2-1">
-            <h4 class="works_title">韓国料理屋【オモニ】MENU & LOGO</h4>
+            <h4 class="works_title">韓国料理屋【オモニ】<span class="br-sp"></span>MENU & LOGO</h4>
             <div class="works_flyer1_wrap">
-                <div class="yazirushi1_left">
-                    <img src="Photo/yazirushi3@2x.png" alt="yazirushi_left" />
-                </div>
+               
             <div class="flyer_1">
                 <img src="Photo/2x/omoni@2x.png" alt="meishi" />
             </div>
-            <div class="yazirushi1_right">
-                <img src="Photo/yazirushi4@2x.png" alt="yazirushi_right" />
-            </div>
+           
            </div>
             <div class="works_contents_wrap">
                 <ul class="works_contents">
@@ -245,6 +243,19 @@
                     prevEl: ".swiper-button-prev",
                 },
             });
+        </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          const meishiSwiper = new Swiper('.meishi_swiper', {
+            loop: false, 
+            slidesPerView: 1,
+            centeredSlides: false,
+            spaceBetween: 0,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
         </script>
     </body>
 </html>

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
-        
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -37,12 +37,24 @@
         <section class="works2-1">
             <h4 class="works_title">美容室GRAND OPEN FLYER</h4>
             <div class="works_flyer_wrap">
-            <div class="flyer">
-                <img src="Photo/flyer１@2x.png" alt="flyer" />
-            </div>
-            <div class="flyer">
-                <img src="Photo/flyer２@2x.png" alt="flyer" />
-            </div></div>
+                  <!-- PC版 -->
+                  <div class="works_flyer_wrap pc-only">
+                    <div class="flyer"><img src="Photo/flyer１@2x.png" alt="flyer" /></div>
+                    <div class="flyer"><img src="Photo/flyer２@2x.png" alt="flyer" /></div>
+                 </div>
+
+
+            
+                  <!-- スマホ用 Swiper -->
+                  <div class="works_flyer_swiper sp-only">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="Photo/flyer１@2x.png" alt="flyer1" /></div>
+                      <div class="swiper-slide"><img src="Photo/flyer２@2x.png" alt="flyer2" /></div>
+                    </div>
+                    <!-- ナビゲーション矢印 -->
+                    <div class="swiper1-button-prev"><img src="Photo/yazirushi3@2x.png" alt="flyer1" /></div>
+                    <div class="swiper1-button-next"><img src="Photo/yazirushi4@2x.png" alt="flyer1" /></div>
+                  </div></div>
             <div class="works_contents_wrap">
                 <ul class="works_contents">
                     <li class="works_contents_item"><span class="works_contents_item_category">
@@ -237,15 +249,31 @@
                         .classList.toggle("active");
                 });
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+       <script>
+         const swiper = new Swiper(".swiper", {
+           loop: true,  
+           navigation: {
+             nextEl: ".swiper-button-next",  
+             prevEl: ".swiper-button-prev",  
+           },
+         });
+       </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <script>
-            const swiper = new Swiper(".swiper", {
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
+          const flyerSwiper = new Swiper('.works_flyer_swiper', {
+            loop: true,  
+            slidesPerView: 1, 
+            centeredSlides: false, 
+            spaceBetween: 0, 
+            watchOverflow: true,
+            navigation: {
+              nextEl: '.swiper1-button-next',
+              prevEl: '.swiper1-button-prev', 
+            },
+          });
         </script>
     </body>
 </html>

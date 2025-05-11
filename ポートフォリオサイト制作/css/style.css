@@ -39,6 +39,12 @@ ul {
     list-style: none;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
 body {
     width: 100%;
     max-width: 100%;
@@ -70,7 +76,7 @@ body {
     z-index: 100;
 }
 
-.logo img{
+.logo {
     width: 5.5vw;
     max-width: 80px;
 }
@@ -112,12 +118,10 @@ picture {
     margin: 0 auto;
     display: block;
     position: relative; 
-}
-
-picture img{
     width: 100%;
     display: block;
 }
+
 
 .word {
   position: absolute;  
@@ -147,16 +151,15 @@ picture img{
 .concept {
     margin-top: 209px;
     margin-bottom: 240px;
+    
 }
 
 
-.concept_word_img img{
-    max-width: 470px;
-}
 
 .concept_word_img{
+  max-width: 470px;
   margin-bottom: 29px;
-  margin-left: 220px;
+  margin-left:220px;
 }
 
 .concept_word{
@@ -182,9 +185,8 @@ picture img{
 }
 
 
-.about_word_img img{
-    width:  112px;
-    max-width: 7.7vw;
+.about_word_img{
+    max-width:  112px;
     margin-left: 220px;
     position: relative;
 }
@@ -194,7 +196,7 @@ picture img{
     display: flex;
 }
 
-.about_img1 img {
+.about_img1{
     width: 280px;
     max-width: 19.5vw;
     margin-top: -29px;
@@ -205,7 +207,7 @@ picture img{
     margin-left: 36px;
 }
 
-.about_img2 img {
+.about_img2{
     width: 560px;
     max-width: 38.88vw;
     margin-top: -330px;
@@ -218,18 +220,15 @@ picture img{
     margin-top: -229px; 
 }
 
-.about_img3 img {
+.about_img3{
     width: 423px;
     max-width: 29.3vw;
 
     
 }
 
-.about_img4 img{
-  max-width: 150px;
-}
-
 .about_img4{
+  max-width: 150px;
     margin-top: -30px;
     margin-left: 50px;
 }
@@ -250,9 +249,10 @@ picture img{
     margin-right: 220px;
     margin-top: 57px;
 }
-
-.view_more_about img{
-    max-width: 142px;
+.view_more_about img,
+.view_more_skills img,
+.view_more_works img{
+   width: 142px;
 }
 
 
@@ -261,16 +261,18 @@ picture img{
 }
 
 
-.skills_word_img img{
-    width: 304px;
-    max-width: 21.1vw;
+.skills_word_img{
+    max-width: 304px;
     margin-left: 220px;
     margin-bottom: 108px;
 }
 
 
-.view_more_skills img{
-    width: 142px;
+.view_more_skills {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 57px;
+    margin-right: 220px;
 
 }
 
@@ -282,11 +284,14 @@ picture img{
       }
 
 
+.swiper.skills-swiper{
+  display: none ;
+}
 
-.skills_photo img{
-    width: 206px;
-    max-width: 14.3vw;
 
+
+.skills_photo{
+  max-width: 206px;
 }
 
 .skills-swiper{
@@ -294,19 +299,12 @@ picture img{
 }
 
 
-.view_more_skills {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 57px;
-    margin-right: 220px;
-}
-
 
 .works{
     margin-bottom: 160px;
 }
 
-.works_word_img img{
+.works_word_img{
     width:360px;
     max-width: 25vw;
     margin-left: 210px;
@@ -346,21 +344,18 @@ picture img{
     display: flex;
     justify-content: flex-end;
     margin-right: 220px;
-    margin-top: 57px;
+    margin-top: 57px;   
 }
 
-.view_more_works img{
-    width: 142px;    
-}
+
 
 
 .contact{
     margin-bottom: 274px;
 }
 
-.contact_photo_img img{
-    width: 670px;
-    max-width: 46.5vw;
+.contact_photo_img{
+    max-width: 670px;
     display: block;
     margin: 0 auto;
 }
@@ -376,23 +371,29 @@ picture img{
   display: none;
 }
 
-footer {
+.footer-pc {
     border-top: 1px solid #bce3e2;
-    padding: 24px 0px ;
+    padding: 24px;
     color: #bce3e2;
-    max-width: 1315px;
+    max-width: 100%;
     margin: 0 auto;
+    padding-left:30px ;
+    padding-right: 30px;
+    
   }
   
   .footer-inner {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
   }
   
 
   .footer-nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     list-style: none;
     padding: 0;
@@ -410,22 +411,20 @@ footer {
   
   .footer-right {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
     font-size: 15px;
     color: #9ec6c8;
-
+    width: 24px;
   }
   
-  .footer-right img {
-    width: 24px;
-    height: 24px;
-  }
 
 
 .footer_bottom_line{
   border-bottom: 1px solid #bce3e2;
-
+  padding-left:30px ;
+  padding-right: 30px;
 }
 
   .footer-left{
@@ -454,8 +453,8 @@ footer {
     margin-left: 40px;
   } 
   
-  .logo_blue img {
-    width: 80px;
+  .logo_blue{
+    max-width: 80px;
   }
 
     /* ＝＝ABOUT＝＝＝＝＝＝＝＝ */
@@ -472,7 +471,7 @@ footer {
     justify-content: center;
 }
 
-.about2_word img{
+.about2_word{
     width: 112px;
     margin-top: 30px;
 }
@@ -481,7 +480,7 @@ footer {
     text-align: center;
 }
 
-.about_intro_photo img{
+.about_intro_photo{
     width: 487px;
     margin: 0 auto;
 }
@@ -523,19 +522,18 @@ footer {
   }
 
 
-.about_strength_word img{
+.about_strength_word{
     width: 60px;
 }
 
 
-.about_strength_photo img{
-    width: 700px;
-}
-
-
 .about_strength_photo{
+    max-width: 700px;
     margin: 0 auto;
 }
+
+
+
 
 
 .strength_right{
@@ -549,8 +547,8 @@ footer {
 }
 
 
-  .strength3 img{
-    width: 268px;
+  .strength3 {
+    max-width: 268px;
 }
 
   .strength01,
@@ -564,39 +562,29 @@ footer {
     text-align: left;
   }
 
-  .strength2 img{
-    width: 305px;
+  .strength2 {
+    max-width: 305px;
 }
 
 .strength1,
 .strength2,
-.strength3
- {
-    display: flex;
+.strength3 {  
+    position: relative;
     align-items: center;
-    width: 100%;
   }
   
   .strength-line {
-    flex-grow: 1;
+    position: absolute;
+    max-width: 90%;
     height: 1px;
     background-color: #b7e4e3;
     margin-top: 40px;
   }
   
-  .strength1 img {
+  .strength1  {
     width: 172px;
   }
   
-  .strength1,
-  .strength3 
-  {
-    flex-direction: row;
-  }
-
-  .strength2{
-    flex-direction: row-reverse;
-  }
 
   .strength_right,
   .strength_left{
@@ -615,7 +603,7 @@ footer {
   }
 
 
-  .skills2_word_img img{
+  .skills2_word_img {
     width: 304px;
     margin-bottom: 144px;
 
@@ -627,15 +615,15 @@ footer {
   }
 
   
-  .graphic img{
+  .graphic{
     width: 433px;
   }
   
-  .webdesing img{
+  .webdesing{
     width: 392px;
   }
 
-  .coding img{
+  .coding{
     width: 485px;
   }
 
@@ -652,15 +640,13 @@ footer {
     margin-bottom: 109px;
   }
 
-  .yazirushi img{
-    width: 23px;
-  }
-
   .yazirushi{
+    max-width: 23px;
     margin-bottom: 70px;
-    text-align: center;
+    margin: 0 auto;
   }
 
+  
 
   .skills1{
     margin-bottom: 15px;
@@ -668,20 +654,18 @@ footer {
   }
 
 
-  .botann img {
-    width: 13px;
-  }
-
   .botann{
+    width: 13px;
     margin-right: 4px;
   }
-  
-  .skills_illustrator img{
-    width: 70px;
+
+
+  .skills_illustrator {
+    max-width: 70px;
 }
 
-  .skills_photoshop img{
-    width: 77px;
+  .skills_photoshop {
+    max-width: 77px;
 }
 
 .skills1 {
@@ -702,15 +686,15 @@ footer {
     flex-direction: row;
   }
 
-  .skills_figma img{
-    width: 42px;
+  .skills_figma{
+    max-width: 42px;
   }
   
-  .skills_HTMLCSS img{
-    width: 95px;
+  .skills_HTMLCSS{
+    max-width: 95px;
   }
-  .skills_JavaScript img{
-    width: 79px;
+  .skills_JavaScript{
+    max-width: 79px;
   }
   
 
@@ -738,13 +722,12 @@ footer {
         
   }
   
-  .contact_word_img img{
-    width: 493px;
-  }
   .contact_word_img{
+    max-width: 493px;
     margin-left: 220px;
     margin-bottom: 94px;
   }
+ 
   
   .contact_sentece{
     font-size: 16px;
@@ -820,19 +803,17 @@ button {
 }
 
 
-.form_send img{
-  width: 94px;
-}
-.form_send{
+.form_send {
   margin: 0 auto;
   max-width: 94px;
   margin-top: 48px;
 }
 
+
   /* ＝＝THANKS＝＝＝＝＝＝＝＝ */
 
-.thanks_word img{
-  width: 493px;
+.thanks_word{
+  max-width: 493px;
 
 }
 
@@ -890,24 +871,24 @@ button {
   display: flex;
 }
 
-.works_word2 img{
-  width:360px
+.works_word2{
+  max-width:360px
 }
 
-.webdesign_word1 img{
-  width:120px
+.webdesign_word1{
+  max-width:120px
 }
 
-.graphicdesign_word1 img{
-  width:152px
+.graphicdesign_word1{
+  max-width:152px
 }
 
 .graphicdesign_word1{
   margin-left: 127px;
 }
 
-.webdesign_word2 img{
-  width:177px
+.webdesign_word2{
+  max-width:177px
 }
 
 
@@ -950,7 +931,7 @@ button {
 
 }
 
-.work-item img {
+.work-item {
   width: 100%;
   display: block;
 }
@@ -966,8 +947,8 @@ button {
 }
 
 
-.graphicdesign_word2 img{
-  width:208px
+.graphicdesign_word2{
+  max-width:208px
 }
 
 .graphicdesign_wrap{
@@ -978,8 +959,20 @@ button {
 
 .works2-1{
   max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.works2-1_hayashi{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
+.works_contents_wrap_hayashi{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
 
 .works_title{
   text-align: center;
@@ -1000,6 +993,7 @@ button {
 }
 
 .works_contents_wrap_trace{
+  margin-top: 97px;
   margin-bottom:96px ;
 }
 
@@ -1009,10 +1003,7 @@ button {
   font-size: 24px;
 }
 
-.works_title_tablet_wrap{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 
 
@@ -1022,63 +1013,98 @@ button {
   align-items: center;
   gap: 30px; 
   max-width: 1000px; 
-  margin: 0 auto 111px;
-  padding: 0 30px;
+  margin: 0 auto;
 }
 
-.flyer img {
+.flyer {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-.works_flyer1_wrap{
+/* 
+ PC版２枚sp版１枚 */
+.pc-only {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 30px;
+}
+
+.sp-only {
+  display: none;
+}
+
+
+
+.flyer_1{
   margin-bottom: 112px;
+  margin: 0 auto;
 }
 
-.logo_photo img{
+.logo_photo{
   max-width: 830px;
+  margin: 0 auto;
 }
 
-.yazirushi1_left img{
-  width: 30px;
+.yazirushi1_left{
+  max-width: 30px;
 }
 
 .yazirushi1_left{
   margin-left: 120px;
 }
 
-.yazirushi1_right img{
-  width: 30px;
+.yazirushi1_right{
+  max-width: 30px;
 }
 
 .yazirushi1_right{
   margin-right: 120px;
 }
 
-.flyer img{
-  width: 450px;
+.flyer{
+  max-width: 450px;
 }
 
-
-.switch img{
-  width: 125px;
-}
-
+/* タブレットモックアップ画面スイッチ */
 .switch{
-  margin-right: 220px;
-  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  margin-left: auto;     
+  margin-bottom: 36px;
 
 }
 
-.works_title_tablet{
-  text-align: center;
-  margin-bottom: 29px;
+.pc_switch{
+  max-width: 36px;
+}
+
+.sh_switch{
+  max-width: 15px;
+}
+
+
+.works_title_tablet_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  position: relative;              
+
+}
+
+.works_title_tablet {
   font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; 
+  margin-bottom: 36px;          
 }
+
+
+
 
 .works_tablet_wrap{
   max-width: 1000px;
@@ -1088,19 +1114,20 @@ button {
 }
 
 .meishi_wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
   margin-bottom: 133px;
-  gap:50px
+  justify-content: center;
 }
 
+.meishi_wrap_ciel{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 /* ＝＝＝＝スクロール＝＝＝ */
-.scroll_down img{
-  max-width: 22px;
-}
-
 .scroll_down{
+  max-width: 22px;
   position: absolute;
   top:50%;
   transform:translateY(-50%);
@@ -1110,74 +1137,133 @@ button {
 
 
 /* ＝＝＝＝スマホのモックアップ＝＝＝ */
-.sh_mock-up img{
-  width: 336px;
- }
-
 .sh_mock-up{ 
+  max-width: 336px;
   margin-bottom: 112px;
-  text-align: center;
+  margin: 0 auto;
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 /* ＝＝＝＝タブレットのモックアップ＝＝＝ */
-.tablet_mock-up img{
-  max-width: 1000px;
-}
 .tablet_mock-up{
+  max-width: 1000px;
   margin-bottom: 112px;
   text-align: center;
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 /* ＝＝＝＝ハヤシのモックアップ＝＝＝ */
-.hayashi_all img{
-  max-width: 1440px;
-}
-
 .hayashi_all{
+  max-width: 1440px;
   margin-bottom: 144px;
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 
+/* ＝＝＝＝logo説明ありの設定＝＝＝ */
+.meishi_swiper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+}
 
-.yazirushi_left img{
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+/* Swiperデフォルト矢印だけを消す */
+.swiper-button-prev:not(.swiper2-prev),
+.swiper-button-next:not(.swiper2-next) {
+  display: none;
+}
+
+.swiper2-prev,
+.swiper2-next{
   width: 30px;
+}
+
+
+
+
+.meishi_omote img,
+.meishi_ura img{
+  max-width: 480px;
+
+}
+.meishi_ura{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.swiper2-button-prev,
+.swiper2-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* ロゴ説明 */
+
+.logo_meaning {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+/* 矢印の配置 */
+.swiper2-prev,
+.swiper2-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper2-prev {
+  left: calc(50% - 540px); 
+}
+
+.swiper2-next {
+  right: calc(50% - 540px);
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+
+
+.yazirushi_left{
+  max-width: 30px;
 }
 
 .yazirushi_left{
   margin-right: 99px;
 }
 
-.yazirushi_right img{
-  width: 30px;
+.yazirushi_right{
+  max-width: 30px;
 }
 
 .yazirushi_right{
   margin-left: 99px;
 }
 
-.meishi_omote img{
-  width:520px;
-}
-.meishi_omote{
-  margin-top: -314px;
-}
 
-.meishi_ura img{
-  width:520px;
-}
-
-.meishi_ura{
-  margin-top: 324px;
-}
-
-.meishi_yoko img{
-  width: 330px;
-}
-
-.flyer_1 img{
+.flyer_1{
   max-width: 450px;
 }
 
@@ -1202,6 +1288,7 @@ button {
 .works_contents_wrap{
   display: flex;
   justify-content: center;
+  margin-top: 112px;
   margin-bottom: 60px;
 }
 
@@ -1250,18 +1337,17 @@ button {
 }
 
 
-.backtoall img{
-  max-width: 155px;
-}
-
-
-
 .backtoall{
   display: flex;
   justify-content: flex-end;
   margin-right: 220px;
   margin-bottom: 250px;
 }
+
+.backtoall img{
+  max-width:155px;
+}
+
 
 
 
@@ -1363,8 +1449,8 @@ button {
 
 
 
-  .logo img{
-      width:50px;
+  .logo{
+      max-width:50px;
   }
 
   .logo_blue {
@@ -1372,24 +1458,15 @@ button {
     margin-left: 20px;
   } 
   
-  .logo_blue img {
-    width: 50px;
+  .logo_blue {
+    max-width: 50px;
   }
 
   .subpage .header{
     padding-bottom: 95px;
   } 
 
-  .concept,
-  .about,
-  .skills,
-  .works
-  .contact
-  .contact2
-  .footer
-   {
-      margin: 0 auto;
-  }
+
   
   
   .concept {
@@ -1398,11 +1475,9 @@ button {
   }
   
   
-  .concept_word_img img{
-      max-width: 188px;
-  }
   
   .concept_word_img{
+    max-width: 188px;
     margin-bottom: 39px;
     margin-left: 30px;
 }
@@ -1435,7 +1510,7 @@ button {
   }
   
   
-  .about_word_img img{
+  .about_word_img{
       width:  112px;
       max-width: 7.7vw;
       margin-left: 30px;
@@ -1447,7 +1522,7 @@ button {
       display: flex;
   }
   
-  .about_img1 img {
+  .about_img1{
       width: 162px;
       max-width: 19.5vw;
       margin-top: -63px;
@@ -1456,14 +1531,11 @@ button {
   
   .about_img2 {
       margin-left: 0px;
-  }
-  
-  .about_img2 img {
-      width: 560px;
-      max-width: 38.88vw;
+      max-width: 560px;
       margin-top: -143px;
   }
   
+
   .about_img3_wrapper {
       display: flex;
       flex-direction: column;
@@ -1471,13 +1543,13 @@ button {
       margin-top: 0;
   }
   
-  .about_img3 img {
+  .about_img3 {
       display: none;
   
       
   }
   
-  .about_img4 img{
+  .about_img4{
     max-width: 150px;
   }
   
@@ -1497,15 +1569,10 @@ button {
   
   
   .view_more_about {
-      display: flex;
-      justify-content: flex-end;
       margin-right: 30px;
       margin-top: 11px;
   }
   
-  .view_more_about img{
-      max-width: 142px;
-  }
   
 
   /* TOPページ部分スキル */
@@ -1515,7 +1582,7 @@ button {
 
 
 
-.skills_word_img img{
+.skills_word_img{
   width: 304px;
   max-width: 21.1vw;
   margin-left: 30px;
@@ -1526,45 +1593,63 @@ button {
   display: none; 
 }
 
-/* TOPページ部分スキルスワイパー */
+/* スライド全体の親（中央寄せ＆ボタンを外に出す） */
+.skills {
+  position: relative; 
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  overflow: visible; 
+}
 
-.skills-swiper {
+/* Swiper本体：中のスライダー */
+.swiper.skills-swiper {
   display: block;
   width: 100%;
-  max-width:260px;
+  max-width: 360px;
   margin: 0 auto;
+  position: relative;
+  overflow: visible;
 }
 
-.skills-swiper img {
-  max-width:260px;
+/* スライド1枚表示 */
+.swiper-slide {
+  width: 100% !important;
+  flex-shrink: 0;
 }
 
-.swiper-slide{
-  width: 100%;
-}
-
-
+/* デフォルト矢印は非表示 */
 .swiper-button-prev,
 .swiper-button-next {
-  top: 70% ;
-  transform: translateY(-50%) ;
-  z-index: 10 ;
+  display: none;
 }
 
-.swiper-button-prev {
-  left: 10px ;
+/* カスタム矢印を外に出す */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
 }
 
-.swiper-button-next {
-  right: 10px ;
+/* スライド枠の外に配置 */
+.custom-prev {
+  left: -20px; 
 }
-.view_more_skills img{
-  width: 142px;
 
+.custom-next {
+  right: -20px; 
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .view_more_skills {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 22px;
   margin-right: 30px;
 }
@@ -1574,7 +1659,7 @@ button {
   margin-bottom: 88px;
 }
 
-.works_word_img img{
+.works_word_img{
   width:360px;
   max-width: 25vw;
   margin-left: 210px;
@@ -1590,24 +1675,19 @@ button {
 
 
 .view_more_works {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 220px;
   margin-top: 57px;
+  margin-left: 30px;
 }
 
-.view_more_works img{
-  width: 142px;    
-}
+
 
 
 .contact{
   margin-bottom: 109px;
 }
 
-.contact_photo_img img{
-  width: 670px;
-  max-width: 46.5vw;
+.contact_photo_img{
+  max-width: 670px;
   display: block;
   margin: 0 auto;
 }
@@ -1627,10 +1707,12 @@ button {
   .footer-sp {
     display: block;
     border-top: 1px solid #bce3e2;
-    padding: 24px 0px ;
+    padding-top: 24px;
     color: #bce3e2;
-    max-width: 330px;
+    max-width: 100%;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
  
@@ -1651,20 +1733,22 @@ button {
   
   .footer-right_nav-sp{
     display: flex;
-    font-size: 15px;
-    color: #9ec6c8;
-
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
   }
   
-  .footer-right_nav-sp img {
+.footer-right_nav-sp img{
     width: 24px;
-    height: 24px;
-  }
+}
 
 
 .footer_bottom_line_nav-sp{
   border-bottom: 1px solid #bce3e2;
-  max-width: 330px;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 
 }
 
@@ -1689,8 +1773,8 @@ button {
     justify-content: center;
 }
 
-.about2_word img{
-    width: 27px;
+.about2_word{
+    max-width: 27px;
     margin-top: 0px;
 }
 
@@ -1698,8 +1782,8 @@ button {
     text-align: center;
 }
 
-.about_intro_photo img{
-    width: 268px;
+.about_intro_photo{
+    max-width: 268px;
     margin: 0 auto;
 }
 
@@ -1735,8 +1819,8 @@ button {
   }
 
 
-.about_strength_word img{
-    width: 27px;
+.about_strength_word{
+    max-width: 27px;
 }
 
 .about_strength_word{
@@ -1744,8 +1828,8 @@ button {
 }
 
 
-.about_strength_photo img{
-    width: 294px;
+.about_strength_photo{
+    max-width: 294px;
 }
 
 
@@ -1766,8 +1850,8 @@ button {
 }
 
 
-  .strength3 img{
-    width: 268px;
+  .strength3{
+    max-width: 268px;
 }
 
   .strength01,
@@ -1779,12 +1863,12 @@ button {
     max-width: 680px;
   }
 
-  .strength2 img{
-    width: 305px;
+  .strength2{
+    max-width: 305px;
 }
   
-  .strength1 img {
-    width: 172px;
+  .strength1{
+    max-width: 172px;
   }
 
 /* ====skills-sp===== */
@@ -1828,13 +1912,10 @@ button {
   margin-bottom: 109px;
 }
 
-.yazirushi img{
-  width: 23px;
-}
+
 
 .yazirushi{
   margin-bottom: 70px;
-  margin: 0 auto;
 }
 
 
@@ -2011,10 +2092,7 @@ margin-top: 81px;
 
 /* ====works-page===== */
 
-.works2-1{
-  margin-left: 30px;
-  margin-right: 30px;
-}
+
 
 
 
@@ -2067,6 +2145,7 @@ margin-top: 81px;
 
 .works_contents_wrap_sh{
   display: block;
+  margin-top: 45px;
   margin-bottom: 51px;
 }
 
@@ -2128,6 +2207,7 @@ margin-top: 81px;
   }
   
   .works_contents_wrap_trace{
+    margin-top: 45px;
     margin-bottom:50px ;
   }
   
@@ -2166,23 +2246,87 @@ margin-top: 81px;
   max-width: 330px;
   display: block;
 }
+
+
+
+/* Pc版２sp版１ */
+  
+.pc-only {
+  display: none;
+}
+
+.sp-only {
+  display: block;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  display: none ;
+}
+
+
+.works_flyer_swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+
+.swiper-wrapper {
+  display: flex;
+}
+
+
+.swiper1-button-prev, .swiper1-button-next {
+  position: absolute;  
+  top: 45%;        
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 20px;
+}
+
+
+.swiper1-button-prev {
+  left: -2px;     
+}
+
+
+.swiper1-button-next {
+  right: -2px;      
+}
+
+.works_flyer_swiper,
+.works_flyer_swiper,
+.works_flyer_swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+
+.works_flyer_swiper {
+  overflow: hidden;
+}
+
   
   
-  .logo_photo img{
-    width: 100%;
-  }
-  
-  .yazirushi1_left img{
-    width: 30px;
-  }
   
   .yazirushi1_left{
     margin-left: 120px;
   }
   
-  .yazirushi1_right img{
-    width: 30px;
-  }
+ 
+  
   
   .yazirushi1_right{
     margin-right: 120px;
@@ -2192,38 +2336,45 @@ margin-top: 81px;
     width: 450px;
   }
   
-  
-  .switch img{
-    width: 125px;
+  .swiper2-prev {
+    left: 0px; /* まず画面の端に置く */
   }
-  
-  .switch{
-    margin-right: 220px;
-    margin-top: 10px;
-  
+
+  .swiper2-next {
+    right: 0px;
   }
-  
-  .works_title_tablet{
-    margin-bottom: 29px;
-    font-size: 20px;
+
+  /* ボタン自体のサイズを小さくして“30px以内”に収まるように */
+  .swiper2-prev::after,
+  .swiper2-next::after {
+    font-size: 20px; /* 矢印アイコンの大きさを調整 */
   }
-  
+
+  .swiper2-prev,
+  .swiper2-next {
+    width: 28px;
+    height: 28px;
+    margin: 0 2px; /* 28px + 2pxで30pxに近づける */
+  }
+
+
 
 
   
   .meishi_wrap{
     display: block;
     margin-bottom: 95px;
-    gap:0px
+  }
+
+  .meishi_wrap_ciel{
+    display: block;
+    margin-bottom: 95px;
   }
   
   /* スマホモックアップ */
-  .sh_mock-up img{
-    width: 190px;
-   }
   .sh_mock-up{ 
+    max-width: 190px;
     margin-bottom: 65px;
-    text-align: center;
   }
   
   /* タブレットモックアップ */
@@ -2264,24 +2415,20 @@ margin-top: 81px;
     margin-left: 99px;
   }
   
+
   .meishi_omote img{
-    width:330px;
+    max-width:100%;
   }
-  .meishi_omote{
-    margin-top: 0px;
-  }
+  
   
   .meishi_ura img{
-    width:330px;
+    max-width:100%;
   }
   
-  .meishi_ura{
-    margin-top:0px;
-  }
+ 
   
-  .meishi_yoko img{
-    width: 330px;
-  }
+ 
+  
   
   .flyer_1 img{
     max-width: 100%;
