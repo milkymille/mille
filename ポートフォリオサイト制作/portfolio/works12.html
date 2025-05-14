@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -35,16 +39,37 @@
         </header>
         <section class="works2-1">
             <h4 class="works_title">ベーカリーショップ【Ciel】<span class="br-sp"></span>SHOP CARD ＆ LOGOデザイン</h4>
-            <div class="meishi_wrap_ciel">
+          
+            <div class="meishi_slider">
+  
+                <!-- スライド1：名刺の表＋裏 -->
+                <div class="meishi_slide">
+                  <div class="meishi_wrap_ciel">
+                    <div class="meishi_yoko">
+                      <img src="Photo/ceil1@2x.png" alt="名刺 表" />
+                    </div>
+                    <div class="meishi_yoko">
+                      <img src="Photo/ciel2@2x.png" alt="名刺 裏" />
+                    </div>
+                  </div>
+                </div>
               
-                <div class="meishi_yoko">
-                    <img src="Photo/ceil1@2x.png" alt="meishi" />
+                
+                <!-- スライド2：ロゴ説明 -->
+                <div class="meishi_slide">
+                  <div class="logo_meaning">
+                    <img src="Photo/ciellogo@2x.png" alt="logo" />
+                  </div>
+                </div>  </div>
+                <!-- 矢印 -->
+                <div class="meishi-prev">
+                <img src="Photo/yazirushi3@2x.png" alt="prev arrow" />
+                 </div>
+                <div class="meishi-next">
+                <img src="Photo/yazirushi4@2x.png" alt="next arrow" />
                 </div>
-                <div class="meishi_yoko">
-                    <img src="Photo/ciel2@2x.png" alt="meishi" />
-                </div>
-              
-                </div>
+          
+            
             <div class="works_contents_wrap">
                 <ul class="works_contents">
                     <li class="works_contents_item"><span class="works_contents_item_category">
@@ -235,15 +260,17 @@
                         .classList.toggle("active");
                 });
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper(".swiper", {
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
+      <script>
+        $(function () {
+          $('.meishi_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: $('.meishi-prev'),
+            nextArrow: $('.meishi-next')
+          });
+        });
+      </script>
+          
     </body>
 </html>

@@ -106,6 +106,24 @@ body {
     margin-top:13px;
   }
   
+  .pc-nav {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(5px);
+  }
+  
+
   /* 縦線 */
   .pc-nav li::before {
     content: "";              
@@ -132,7 +150,7 @@ picture {
   color: white;       
   font-size: 48px;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* 背景に馴染むよう影をつける */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); 
 }
 
 .concept,
@@ -146,6 +164,19 @@ picture {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
 
 
 .concept {
@@ -192,10 +223,6 @@ picture {
 }
 
 
-.about_img {
-    display: flex;
-}
-
 .about_img1{
     width: 280px;
     max-width: 19.5vw;
@@ -231,6 +258,21 @@ picture {
   max-width: 150px;
     margin-top: -30px;
     margin-left: 50px;
+}
+
+.about_img4 {
+  width: 200px;
+  height: auto;
+  animation: rotate360 10s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .about_sentence {
@@ -284,7 +326,7 @@ picture {
       }
 
 
-.swiper.skills-swiper{
+.skills_sp{
   display: none ;
 }
 
@@ -305,40 +347,56 @@ picture {
 }
 
 .works_word_img{
-    width:360px;
-    max-width: 25vw;
+    max-width:360px;
     margin-left: 210px;
     margin-bottom: 107px;
 }
 
 
-/* .carousel_item img{
-    height: 280px;
-} */
+.carousel_item{
+    max-width: 480px;
+}
 
 .carousel_inner{
     display:flex;
     position: relative;
 }
 
-/* 
+.carousel_inner{
+  display:flex;
+  position: relative;
+}
+
+
 .prev-arrow{
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%) ;
-    width: 19px;
-    left: 20%;
-    z-index: 999;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%) ;
+  width: 19px;
+  left: 20%;
+  z-index: 999;
 }
 
 .next-arrow{
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%) ;
-    width: 19px;
-    right: 20%;
-    z-index: 999;
-} */
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%) ;
+  width: 19px;
+  right: 20%;
+  z-index: 999;
+}
+
+.lightbox .lb-container { padding: 2px; }
+.lightbox{padding-top: 200px;
+
+}
+
+
+
+
+
+
+
 
 .view_more_works {
     display: flex;
@@ -353,13 +411,66 @@ picture {
 .contact{
     margin-bottom: 274px;
 }
-
-.contact_photo_img{
-    max-width: 670px;
-    display: block;
-    margin: 0 auto;
+.postcard {
+  max-width: 670px;
+  display: block;
+  margin: 0 auto;
+  position: relative; 
+  opacity: 5s;
+  transform: translateY(-150px) scale(1.1);
 }
 
+.postcard.show {
+  animation: softDropIn 1.2s ease-out forwards;
+}
+
+@keyframes softDropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.stamp {
+  position: absolute;
+  top: -25px;
+  right: -60px;
+  background: url('stamp.png') no-repeat center center / contain;
+  max-width: 180px;
+  opacity: 0;
+  transform: scale(1.4);
+  z-index: 10;
+  display: block;
+}
+
+/* アニメーションをつけるクラス */
+.stamp.show {
+  animation: stampPush 0.5s ease-out forwards;
+}
+
+@keyframes stampPush {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px) scale(1.4) rotate(-5deg);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.1) rotate(2deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.03) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
 .thankyou{
     margin-bottom: 255px;
 }
@@ -371,17 +482,24 @@ picture {
   display: none;
 }
 
+.footer_top_line{
+  border-top: 1px solid #bce3e2;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+
 .footer-pc {
-    border-top: 1px solid #bce3e2;
-    padding: 24px;
     color: #bce3e2;
     max-width: 100%;
     margin: 0 auto;
     padding-left:30px ;
     padding-right: 30px;
-    
   }
   
+
   .footer-inner {
     display: flex;
     justify-content: space-between;
@@ -416,9 +534,11 @@ picture {
     gap: 10px;
     font-size: 15px;
     color: #9ec6c8;
-    width: 24px;
   }
   
+  .instaicon{
+    width: 24px;
+  }
 
 
 .footer_bottom_line{
@@ -539,43 +659,29 @@ picture {
 .strength_right{
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 25px;
+  max-width: 1000px;
+}
+
+.strength_left{
+  margin-bottom: 25px;
+  max-width: 1000px;
 }
 
 .strength01,
-.strength02{
-    margin-bottom: 20px;
-}
-
-
-  .strength3 {
-    max-width: 268px;
-}
-
-  .strength01,
-  .strength03{
-  max-width: 680px;
-  text-align: left;
-  } 
-
-  .strength02{
+.strength02,
+.strength03{
+    margin-bottom: 10px;
     max-width: 680px;
     text-align: left;
-  }
-
-  .strength2 {
-    max-width: 305px;
-}
-
-.strength1,
-.strength2,
-.strength3 {  
     position: relative;
     align-items: center;
-  }
-  
+}
+
+
   .strength-line {
     position: absolute;
-    max-width: 90%;
+    width: 90%;
     height: 1px;
     background-color: #b7e4e3;
     margin-top: 40px;
@@ -584,10 +690,18 @@ picture {
   .strength1  {
     width: 172px;
   }
-  
 
-  .strength_right,
-  .strength_left{
+  .strength2 {
+    max-width: 305px;
+}
+  
+ .strength3 {
+  max-width: 268px;
+}
+
+
+  .strength_right_word,
+  .strength_left_word{
     line-height: 2.25;
     font-size: 16px;
   }
@@ -616,15 +730,15 @@ picture {
 
   
   .graphic{
-    width: 433px;
+    max-width: 433px;
   }
   
   .webdesing{
-    width: 392px;
+    max-width: 392px;
   }
 
   .coding{
-    width: 485px;
+    max-width: 485px;
   }
 
   .skills_sentence{
@@ -708,6 +822,31 @@ picture {
     margin: 0 auto;
     line-height: 2.25;
   }
+
+
+
+
+  .prev-arrow{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    width: 19px;
+    left: 18px;
+}
+
+.next-arrow{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    width: 19px;
+    right: 18px;
+}
+
+.carousel_item a {
+    pointer-events: none;
+}
+
+
 
 
   /* ＝＝CONTACT＝＝＝＝＝＝＝＝ */
@@ -1091,6 +1230,12 @@ button {
   position: relative;              
 
 }
+.works_tablet_wrap{
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
 
 .works_title_tablet {
   font-size: 24px;
@@ -1104,21 +1249,26 @@ button {
 }
 
 
-
-
-.works_tablet_wrap{
-  max-width: 1000px;
-  margin: 0 auto;
+.meishi_slider{
   align-items: center;
   position: relative;
 }
 
-.meishi_wrap{
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 133px;
+.meishi_slide {
+  display: flex ;
   justify-content: center;
+  align-items: center;
 }
+
+
+.meishi_wrap {
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 
 .meishi_wrap_ciel{
   display: flex;
@@ -1176,18 +1326,29 @@ button {
 }
 
 
-/* Swiperデフォルト矢印だけを消す */
-.swiper-button-prev:not(.swiper2-prev),
-.swiper-button-next:not(.swiper2-next) {
-  display: none;
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
 }
 
-.swiper2-prev,
-.swiper2-next{
-  width: 30px;
+.slick-prev {
+  left: calc(50% - 540px);
+}
+
+.slick-next {
+  right: calc(50% - 540px);
 }
 
 
+.logo_slider {
+  position: relative;
+}
 
 
 .meishi_omote img,
@@ -1220,25 +1381,47 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  
 }
 
-
-/* 矢印の配置 */
-.swiper2-prev,
-.swiper2-next {
+.logo-prev,
+.logo-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 30px;
+  cursor: pointer;
   z-index: 10;
 }
 
-.swiper2-prev {
-  left: calc(50% - 540px); 
+
+.logo-prev {
+  left: 10px; 
+}
+.logo-next {
+  right: 10px; }
+
+
+
+/* 矢印の配置 */
+.meishi-prev,
+.meishi-next {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  z-index: 10;
+  max-width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block
 }
 
-.swiper2-next {
-  right: calc(50% - 540px);
+.meishi-prev {
+  left: 0;
+}
+
+.meishi-next {
+  right:0;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
@@ -1593,40 +1776,23 @@ button {
   display: none; 
 }
 
-/* スライド全体の親（中央寄せ＆ボタンを外に出す） */
-.skills {
-  position: relative; 
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto;
-  overflow: visible; 
-}
 
-/* Swiper本体：中のスライダー */
-.swiper.skills-swiper {
+.skills_sp{
   display: block;
-  width: 100%;
-  max-width: 360px;
   margin: 0 auto;
   position: relative;
-  overflow: visible;
 }
 
-/* スライド1枚表示 */
-.swiper-slide {
-  width: 100% !important;
-  flex-shrink: 0;
+.skills-slider{
+  max-width: 330px;
+  margin: 0 auto;
 }
 
-/* デフォルト矢印は非表示 */
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
-
-/* カスタム矢印を外に出す */
+/* カスタム矢印 */
 .custom-prev,
 .custom-next {
+  margin-left: 10px;
+  margin-right: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1635,13 +1801,12 @@ button {
   width: 20px;
 }
 
-/* スライド枠の外に配置 */
 .custom-prev {
-  left: -20px; 
+  left: 0px;
 }
 
 .custom-next {
-  right: -20px; 
+  right: 0px;
 }
 
 .swiper-slide img {
@@ -1686,10 +1851,18 @@ button {
   margin-bottom: 109px;
 }
 
-.contact_photo_img{
-  max-width: 670px;
+.postcard{
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.stamp{
+  max-width: 89px;
+  top: 0;
+  right: -20px;
 }
 
 .thankyou{
@@ -1704,15 +1877,26 @@ button {
     justify-content: center;
   }
 
+
+
+
+  .footer_top_line_nav-sp{
+    border-top: 1px solid #bce3e2;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+  
+  }
   .footer-sp {
     display: block;
-    border-top: 1px solid #bce3e2;
-    padding-top: 24px;
     color: #bce3e2;
     max-width: 100%;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+
   }
   
  
@@ -2001,6 +2185,7 @@ button {
   text-align: center;
 }
 
+
 .contact_sentece{
   height: 1.44;
   margin-bottom: 64px;
@@ -2261,77 +2446,37 @@ margin-top: 81px;
   margin: 0 auto;
 }
 
-.swiper-slide img {
+
+.works_flyer_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.works_flyer_slider img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-
-.swiper-button-prev, .swiper-button-next {
-  display: none ;
-}
-
-
-.works_flyer_swiper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  overflow: visible;
-}
-
-
-.swiper-wrapper {
-  display: flex;
-}
-
-
-.swiper1-button-prev, .swiper1-button-next {
-  position: absolute;  
-  top: 45%;        
+/* カスタム矢印 */
+.swiper1-button-prev,
+.swiper1-button-next {
+  position: absolute;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   width: 20px;
+  cursor: pointer;
 }
-
 
 .swiper1-button-prev {
-  left: -2px;     
+  left: -30px;
 }
-
 
 .swiper1-button-next {
-  right: -2px;      
+  right: -30px;
 }
-
-.works_flyer_swiper,
-.works_flyer_swiper,
-.works_flyer_swiper .swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-
-
-.works_flyer_swiper {
-  overflow: hidden;
-}
-
-  
-  
-  
-  .yazirushi1_left{
-    margin-left: 120px;
-  }
-  
- 
-  
-  
-  .yazirushi1_right{
-    margin-right: 120px;
-  }
-  
   .flyer img{
     width: 450px;
   }

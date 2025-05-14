@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mill Design portfolio site</title>
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Slick JS -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- Slick CSS -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="header-wrap">
+                <h1 class="logo">
+                    <img src="Photo/logo_white.png" alt="mill_logo" />
+                </h1>
+                <nav class="pc-nav">
+                    <ul>
+                        <li><a href="#CONCEPT">CONCEPT</a></li>
+                        <li><a href="#about.html">ABOUT</a></li>
+                        <li><a href="#skills.html">SKILLS</a></li>
+                        <li><a href="#works.html">WORKS</a></li>
+                        <li><a href="#contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="sp-nav">
+                    <ul>
+                        <li><a href="#CONCEPT">CONCEPT</a></li>
+                        <li><a href="#about.html">ABOUT</a></li>
+                        <li><a href="#skills.html">SKILLS</a></li>
+                        <li><a href="#works.html">WORKS</a></li>
+                        <li><a href="#contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_photo">
+                <picture>
+                    <source
+                        srcset="Photo/header.png"
+                        media="(max-width: 767px)"
+                    />
+                    <img src="Photo/header.png" alt="海の写真" />
+                </picture>
+
+                <p class="word">心に届ける<br /><br />想いをカタチに</p>
+            </div>
+        </header>
+
+        <section class="concept" id="CONCEPT">
+            <h2 class="concept_word_img fade-in">
+                <img src="Photo/Concept.png" alt="content" />
+            </h2>
+
+            <div class="concept_word fade-in">
+                私は美容師として、人が本来持っている美しさに寄り添い、その魅力を引き出してきました<br />
+                デザインにおいても、その想いは同じです<br />
+                クライアント様の想いに寄り添い、ともに歩みながら、その人だけの“らしさ”を<br />
+                丁寧にカタチにしていきます<br /><br />
+                海が空の色を映して、さまざまな表情を見せるように。<br />
+                私のデザインも、お客様一人ひとりの想いを映しながら、その魅力を引き立てる存在でありたい<br />
+                空のように自由に、海のように深く<br /><br />
+                ────あなたらしい魅力を、あなたらしいカタチで表現するデザインを────<br /><br />
+                そんな想いを乗せてポートフォリオを作成いたしました
+            </div>
+        </section>
+
+        <section class="about" id="ABOUT">
+            <h2 class="about_word_img fade-in">
+                <img src="Photo/ABOUT.png" alt="about" />
+            </h2>
+            <div class="about_img">
+                <div class="about_img1">
+                    <img src="Photo/about1.png" alt="about_photo1" />
+                </div>
+                <div class="about_img2">
+                    <img src="Photo/about2.png" alt="about_photo2" />
+                </div>
+                <div class="about_img3_wrapper">
+                    <div class="about_img3">
+                        <img src="Photo/about3.png" alt="about_photo3" />
+                    </div>
+                    <div class="about_img4">
+                        <img src="Photo/about_img4.png" alt="about_photo3" />
+                    </div>
+                </div>
+            </div>
+            <p class="about_sentence fade-in">
+                現在働いている会社で制作物を任された際、デザインの楽しさと面白さ、難しさを知りもっと専門的な知識を身につけたいと勉強を決意し、Webデザインやコーディングについて学ぼうと決意しました！
+            </p>
+            <a href="about.html">
+                <div class="view_more_about">
+                  <img src="Photo/viewmore.png" alt="view more" />
+                </div>
+              </a>
+        </section>
+
+        <section class="skills" id="SKILLS">
+            <h2 class="skills_word_img fade-in">
+                <img src="Photo/SLKILLS.png" alt="skills" />
+            </h2>
+
+            <div class="skills_photo_wrap">
+                <div class="skills_list">
+                    <p class="skills_photo">
+                        <img src="Photo/graphic.png" alt="graphic" />
+                    </p>
+                </div>
+                <div class="skills_photo_list">
+                    <p class="skills_photo">
+                        <img src="Photo/Web.png" alt="web" />
+                    </p>
+                </div>
+                <div class="skills_photo_list">
+                    <p class="skills_photo">
+                        <img src="Photo/coding.png" alt="coding" />
+                    </p>
+                </div>
+            </div>
+
+            <!-- スマホ版：カルーセル -->
+            <div class="skills_sp">
+                <div class="skills-slider">
+                    <div><img src="Photo/graphic.png" alt="graphic" /></div>
+                    <div><img src="Photo/Web.png" alt="web" /></div>
+                    <div><img src="Photo/coding.png" alt="coding" /></div>
+                </div>
+                <div class="custom-prev">
+                    <img src="Photo/yazirushi3@2x.png" alt="prev" />
+                </div>
+                <div class="custom-next">
+                    <img src="Photo/yazirushi4@2x.png" alt="next" />
+                </div>
+            </div>
+            <a href="skills.html">
+            <div class="view_more_skills">
+                <img src="Photo/viewmore.png" alt="view more" />
+            </div></a>
+        </section>
+
+        <section class="works" id="WORKS">
+            <h2 class="works_word_img fade-in">
+                <img src="Photo/works.png" alt="works" />
+            </h2>
+
+            <!-- PC版ギャラリー -->
+
+            <div class="carousel_inner">
+                <div class="carousel_item">
+                    <a
+                        href="Photo/hamburger_POP@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="ハンバーガーバナー"
+                    >
+                        <img
+                            src="Photo/hamburger_POP@2x.png"
+                            class="img-gallery"
+                            alt="ハンバーガーバナー"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/hamburger_1@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="ハンバーガーバナー"
+                    >
+                        <img
+                            src="Photo/hamburger_1@2x.png"
+                            class="img-gallery"
+                            alt="ハンバーガーバナー"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/ice@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="アイスバナー"
+                    >
+                        <img
+                            src="Photo/ice@2x.png"
+                            class="img-gallery"
+                            alt="アイスバナー"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/salonLP@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="美容室LP"
+                    >
+                        <img
+                            src="Photo/salonLP@2x.png"
+                            class="img-gallery"
+                            alt="美容室LP"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/shampoo LP@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="ヘアケアLP"
+                    >
+                        <img
+                            src="Photo/shampoo LP@2x.png"
+                            class="img-gallery"
+                            alt="ヘアケアLP"
+                        />
+                    </a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/cafe@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="カフェ"
+                    >
+                        <img
+                            src="Photo/cafe@2x.png"
+                            class="img-gallery"
+                            alt="カフェ"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/sp@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="スマホバナー"
+                    >
+                        <img
+                            src="Photo/sp@2x.png"
+                            class="img-gallery"
+                            alt="スマホバナー"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/working@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="コワーキング"
+                    >
+                        <img
+                            src="Photo/working@2x.png"
+                            class="img-gallery"
+                            alt="コワーキング"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/flyer@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="flyer"
+                    >
+                        <img
+                            src="Photo/flyer@2x.png"
+                            class="img-gallery"
+                            alt="flyer"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/RAN@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="ショップカード"
+                    >
+                        <img
+                            src="Photo/RAN@2x.png"
+                            class="img-gallery"
+                            alt="ショップカード"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/HAYASHI@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="ショップカード"
+                    >
+                        <img
+                            src="Photo/HAYASHI@2x.png"
+                            class="img-gallery"
+                            alt="ショップカード"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/omoni_menu.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="メニュー表"
+                    >
+                        <img
+                            src="Photo/omoni_menu.png"
+                            class="img-gallery"
+                            alt="メニュー表"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/recruit_@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="フライヤー"
+                    >
+                        <img
+                            src="Photo/recruit_@2x.png"
+                            class="img-gallery"
+                            alt="フライヤー"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/CAFEMEN U@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="カフェメニュー"
+                    >
+                        <img
+                            src="Photo/CAFEMEN U@2x.png"
+                            class="img-gallery"
+                            alt="カフェメニュー"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/ciel@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="shop Card"
+                    >
+                        <img
+                            src="Photo/ciel@2x.png"
+                            class="img-gallery"
+                            alt="shop Card"
+                    /></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/SALON＿LOGO@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="美容室Logo"
+                    >
+                        <img
+                            src="Photo/SALON＿LOGO@2x.png"
+                            class="img-gallery"
+                            alt="美容室Logo"
+                    /></a>
+                </div>
+            </div>
+            <a href="works.html">
+            <div class="view_more_works">
+                <img src="Photo/viewmore.png" alt="view more" />
+            </div></a>
+        </section>
+
+
+        <section class="contact" id="CONTACT">
+            <a href="contact.html">
+              <div class="contact_photo_img">
+                <div class="postcard">
+                  <img src="Photo/contactphoto@2x.png" alt="contact" />
+                  <img src="Photo/stamp@2x.png" alt="スタンプ" class="stamp" id="stamp" />
+                </div>
+              </div>
+            </a>
+          </section>
+        <section class="thankyou">
+            <p class="thankyou_wave">THANKYOU</p>
+        </section>
+
+        <footer class="footer-pc">
+            <div class="footer_top_line"></div>
+            <div class="footer-inner">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#TOP">TOP</a></li>
+                        <li><a href="#CONCEPT">CONCEPT</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#SKILLS">SKILLS</a></li>
+                        <li><a href="#WORKS">WORKS</a></li>
+                        <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right">
+                    <div class="finduson">
+                    <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom_line"></div>
+            <div class="footer-left">© 2025 MILKY</div>
+        </footer>
+
+        <footer class="footer-sp">
+            <div class="footer_top_line_nav-sp"></div>
+            <div class="footer-inner_sp">
+                <nav class="footer_nav-sp">
+                    <ul>
+                        <li class="menu-item"><a href="#TOP">TOP</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="#ABOUT">ABOUT</a></li>
+                        <li class="menu-item"><a href="#SKILLS">SKILLS</a></li>
+                        <li class="menu-item"><a href="#WORKS">WORKS</a></li>
+                        <li class="menu-item"><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right_nav-sp">
+                    <div class="finduson">
+                        <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
+            </div>
+            <div class="footer_bottom_line_nav-sp"></div>
+            <div class="footer-left_nav-sp">© 2025 MILKY</div>
+        </footer>
+        <script>
+            $(document).ready(function () {
+                $(".skills-slider").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: $(".custom-prev"),
+                    nextArrow: $(".custom-next"),
+                    infinite: true,
+                });
+            });
+        </script>
+
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script>
+            document
+                .getElementById("hamburger")
+                .addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    document
+                        .querySelector(".sp-nav")
+                        .classList.toggle("active");
+                });
+
+            $(".carousel_inner").slick({
+                autoplay: true,
+                adaptiveHeight: true,
+                prevArrow:
+                    '<img src="Photo/yazirushi3@2x.png" class="slide-arrow prev-arrow">',
+                nextArrow:
+                    '<img src="Photo/yazirushi4@2x.png" class="slide-arrow next-arrow">',
+                slidesToShow: 3,
+
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            prevArrow:
+                                '<img src="Photo/yazirushi3@2x.png" class="slide-arrow prev-arrow">',
+                            nextArrow:
+                                '<img src="Photo/yazirushi4@2x.png" class="slide-arrow next-arrow">',
+                        },
+                    },
+                ],
+            });
+        </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+ <script>
+            window.addEventListener('load', () => {
+              const postcard = document.querySelector('.postcard');
+              const stamp = document.querySelector('.stamp');
+          
+              postcard.classList.add('show');
+              setTimeout(() => {
+                stamp.classList.add('show');
+              }, 900); 
+            });
+          </script>
+
+
+<script>// スクロール時に画像が表示されるかチェックする関数
+    function checkScroll() {
+      const images = document.querySelectorAll('.fade-in');
+    
+      images.forEach(image => {
+        const rect = image.getBoundingClientRect(); // 画像の位置を取得
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          // 画像がビューポート内に表示された場合
+          image.classList.add('show');
+        }
+      });
+    }
+    
+    // ページ読み込み時とスクロール時に関数を実行
+    window.addEventListener('load', checkScroll);
+    window.addEventListener('scroll', checkScroll);</script>
+    </body>
+</html>

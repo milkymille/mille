@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -35,57 +39,61 @@
             </div>
         </header>
         <section class="works2-1">
-            <h4 class="works_title">美容室GRAND OPEN FLYER</h4>
-            <div class="works_flyer_wrap">
-                  <!-- PC版 -->
-                  <div class="works_flyer_wrap pc-only">
-                    <div class="flyer"><img src="Photo/flyer１@2x.png" alt="flyer" /></div>
-                    <div class="flyer"><img src="Photo/flyer２@2x.png" alt="flyer" /></div>
-                 </div>
-
-
-            
-                  <!-- スマホ用 Swiper -->
-                  <div class="works_flyer_swiper sp-only">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="Photo/flyer１@2x.png" alt="flyer1" /></div>
-                      <div class="swiper-slide"><img src="Photo/flyer２@2x.png" alt="flyer2" /></div>
+            <h4 class="works_title">建設会社【佐藤建設】BUSINESS CARD ＆ LOGOデザイン</h4>
+            <div class="meishi_slider">
+  
+                <!-- スライド1：名刺の表＋裏 -->
+                <div class="meishi_slide">
+                  <div class="meishi_wrap">
+                    <div class="meishi_omote">
+                      <img src="Photo/meishi1@2x.png" alt="名刺 表" />
                     </div>
-                    <!-- ナビゲーション矢印 -->
-                    <div class="swiper1-button-prev"><img src="Photo/yazirushi3@2x.png" alt="flyer1" /></div>
-                    <div class="swiper1-button-next"><img src="Photo/yazirushi4@2x.png" alt="flyer1" /></div>
-                  </div></div>
+                    <div class="meishi_ura">
+                      <img src="Photo/meishi2@2x.png" alt="名刺 裏" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- スライド2：ロゴ説明 -->
+                <div class="meishi_slide">
+                  <div class="logo_meaning">
+                    <img src="Photo/satoulogo@2x.png" alt="logo" />
+                  </div>
+                </div>  </div>
+                <!-- 矢印 -->
+                <div class="meishi-prev">
+                    <img src="Photo/yazirushi3@2x.png" alt="prev arrow" />
+                     </div>
+                    <div class="meishi-next">
+                    <img src="Photo/yazirushi4@2x.png" alt="next arrow" />
+                    </div>
+
+              
+        
+            
             <div class="works_contents_wrap">
                 <ul class="works_contents">
                     <li class="works_contents_item"><span class="works_contents_item_category">
                         ターゲット</span><span class="works_contents_info"
-                            >20代後半~40代女性</span
+                            >経営者/会社員/お客様</span
                         >
                     </li>
                     <div class="line"></div>
                     <li class="works_contents_item"><span class="works_contents_item_category">
                         目的</span><span class="works_contents_info"
-                            >髪質改善に力を入れた美容室が1周年キャンペーン
-                            キャンペーンで行う５０％OFFと髪質改善の効果を前面に出したフライヤーを作成したい</span
+                            >モットーである、「お客様の大切な瞬間をサポートできる会社に」を表現した名刺ロゴを作成したい</span
                         >
                     </li>
                     <div class="line"></div>
                     <li class="works_contents_item"><span class="works_contents_item_category">
-                        情報設計</span><span class="works_contents_info"
-                            >表面はお店の情報でまとめて、裏面のメニューでまとめフライヤーを裏表と行ったりきたりしなくても
-                            良いように情報をまとめ見やすいようにまとめ予約をしやすいように設計しました。</span
+                        デザイン</span><span class="works_contents_info"
+                            >会社のコンセプトを基に自然をイメージするグリーンカラーをメインであしらい裏面は情報が見やすいようには文字の配置をして制作、裏面を縦にすると煙突のあるお家のシルエットに見えるようにユーモアの含めて制作しました</span
                         >
                     </li>
                 <div class="line"></div>
                 <li class="works_contents_item"><span class="works_contents_item_category">
-                    デザイン</span><span class="works_contents_info"
-                        >美容室のフライヤーということで前面に清潔感や透明感が出るように色味やフォントを選択し作成いたしました。また表、裏で情報をまとめ見やすさが出るように作成いたしました</span
-                    >
-                </li>
-                <div class="line"></div>
-                <li class="works_contents_item"><span class="works_contents_item_category">
                     使用ツール</span><span class="works_contents_info"
-                        >Illustrator・Photoshop</span
+                        >Illustrator</span
                     >
                 </li>
                 <div class="line"></div>
@@ -95,41 +103,40 @@
                     >
                 </li>
             </div>
-
-
             <div class="works_contents_wrap_sh">
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">ターゲット</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">20代後半~40代女性</div>
+                    <div class="works_contents_info_sh">経営者/会社員/お客様</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">目的</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">髪質改善に力を入れた美容室が1周年キャンペーン
-                        キャンペーンで行う５０％OFFと髪質改善の効果を前面に出したフライヤーを作成したい</div>
+                    <div class="works_contents_info_sh">モットーである、「お客様の大切な瞬間をサポートできる会社に」を表現した名刺ロゴを作成したい</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">情報設計</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">表面はお店の情報でまとめて、裏面のメニューでまとめフライヤーを裏表と行ったりきたりしなくても
-                        良いように情報をまとめ見やすいようにまとめ予約をしやすいように設計しました。</div>
+                    <div class="works_contents_info_sh"></div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">デザイン</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">美容室のフライヤーということで前面に清潔感や透明感が出るように色味やフォントを選択し作成いたしました。また表、裏で情報をまとめ見やすさが出るように作成いたしました</div>
+                    <div class="works_contents_info_sh">会社のコンセプトを基に自然をイメージするグリーンカラーをメインであしらい裏面は情報が見やすいようには文字の配置をして制作、裏面を縦にすると煙突のあるお家のシルエットに見えるようにユーモアの含めて制作しました</div>
                 <div class="works_contents_sh"><div class="works_contents_item_category_sh">使用ツール</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">Illustrator・Photoshop</div>
+                    <div class="works_contents_info_sh">Illustrator</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">制作期間</div>
                     <div class="works-line_sh"></div></div>
                     <div class="works_contents_info_sh">1週間</div>
                 </div>
-                <div class="backtoall">
-                    <img src="Photo/BACKTOALL@2x.png" alt="backtoall" />
-                </div>
+    
+            <div class="backtoall">
+                <img src="Photo/BACKTOALL@2x.png" alt="backtoall" />
+            </div>
+
 
         </section>
 
+       
         <footer class="footer-pc">
             <div class="footer-inner">
                 <nav class="footer-nav">
@@ -249,31 +256,17 @@
                         .classList.toggle("active");
                 });
         </script>
-       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-       <script>
-         const swiper = new Swiper(".swiper", {
-           loop: true,  
-           navigation: {
-             nextEl: ".swiper-button-next",  
-             prevEl: ".swiper-button-prev",  
-           },
-         });
-       </script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <script>
-          const flyerSwiper = new Swiper('.works_flyer_swiper', {
-            loop: true,  
-            slidesPerView: 1, 
-            centeredSlides: false, 
-            spaceBetween: 0, 
-            watchOverflow: true,
-            navigation: {
-              nextEl: '.swiper1-button-next',
-              prevEl: '.swiper1-button-prev', 
-            },
+      <script>
+        $(function () {
+          $('.meishi_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: $('.meishi-prev'),
+            nextArrow: $('.meishi-next')
           });
-        </script>
+        });
+      </script>
+          
     </body>
 </html>

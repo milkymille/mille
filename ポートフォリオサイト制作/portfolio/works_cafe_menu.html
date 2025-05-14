@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -36,37 +39,58 @@
             </div>
         </header>
         <section class="works2-1">
-            <h4 class="works_title">韓国料理屋【オモニ】<span class="br-sp"></span>MENU & LOGO</h4>
-            <div class="works_flyer1_wrap">
-               
-            <div class="flyer_1">
-                <img src="Photo/2x/omoni@2x.png" alt="meishi" />
-            </div>
-           
-           </div>
+            <h4 class="works_title">カフェMENUデザイン</h4>
+
+            <div class="works_flyer_wrap">
+                <!-- PC版 -->
+            
+             <div class="works_flyer_wrap pc-only">
+            <div class="flyer"><img src="Photo/menu1@2x.png" alt="flyer" /></div>
+            <div class="flyer"><img src="Photo/menu2@2x.png" alt="flyer" /></div>
+             </div>
+               </div>
+
+
+          
+                <!-- スマホ用 Swiper -->
+                <div class="works_flyer_wrapper sp-only">
+                  <div class="works_flyer_slider">
+                    <div><img src="Photo/menu1@2x.png" alt="flyer1" /></div>
+                    <div><img src="Photo/menu2@2x.png" alt="flyer2" /></div>
+                  </div>
+                  <div class="swiper1-button-prev">
+                    <img src="Photo/yazirushi3@2x.png" alt="prev" />
+                  </div>
+                  <div class="swiper1-button-next">
+                    <img src="Photo/yazirushi4@2x.png" alt="next" />
+                  </div>
+                </div>
+        
+            
+             
             <div class="works_contents_wrap">
                 <ul class="works_contents">
                     <li class="works_contents_item"><span class="works_contents_item_category">
                         ターゲット</span><span class="works_contents_info"
-                            >20代から30代の女性</span
+                            >30代女性</span
                         >
                     </li>
                     <div class="line"></div>
                     <li class="works_contents_item"><span class="works_contents_item_category">
                         目的</span><span class="works_contents_info"
-                            >韓国の家庭に訪れたような心安らぐ時間を過ごしてもらいたいターゲットに刺さるようなロゴやMENUを作成したい</span
+                            >看板メニューのプリンを分かりやすく表示させ、またお店の雰囲気に合わせたメニュー表を作成したい</span
                         >
                     </li>
                     <div class="line"></div>
                     <li class="works_contents_item"><span class="works_contents_item_category">
                         情報設計</span><span class="works_contents_info"
-                            ></span
+                            >かための昔懐かしいプリンがおすすめのお店なのでおすすめのプリンを大きめに配置をし、目立つようにまたお店の看板メニューであることがわかるように表示させました</span
                         >
                     </li>
                 <div class="line"></div>
                 <li class="works_contents_item"><span class="works_contents_item_category">
                     デザイン</span><span class="works_contents_info"
-                        >お店の名前のお母さんと温かさと温かい韓国料理を提供を込めて温かみのある暖色のイエローベースでメニューを作成し、全体が見やすくなるように細かい配置にも気を遣いました</span
+                        >落ちついた雰囲気のお店でもあるのでブラウンの色味と３０代女性ターゲットということで落ちついたピンクベージュを背景に配置し、お店の雰囲気と合わせデザインしました</span
                     >
                 </li>
                 <div class="line"></div>
@@ -82,24 +106,25 @@
                     >
                 </li>
             </div>
+
+
             <div class="works_contents_wrap_sh">
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">ターゲット</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">20代から30代の女性</span
-                        ></div>
+                    <div class="works_contents_info_sh">30代女性</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">目的</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">韓国の家庭に訪れたような心安らぐ時間を過ごしてもらいたいターゲットに刺さるようなロゴやMENUを作成したい</div>
+                    <div class="works_contents_info_sh">看板メニューのプリンを分かりやすく表示させ、またお店の雰囲気に合わせたメニュー表を作成したい</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">情報設計</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh"></div>
+                    <div class="works_contents_info_sh">かための昔懐かしいプリンがおすすめのお店なのでおすすめのプリンを大きめに配置をし、目立つようにまたお店の看板メニューであることがわかるように表示させました</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">デザイン</div>
                     <div class="works-line_sh"></div></div>
-                    <div class="works_contents_info_sh">お店の名前のお母さんと温かさと温かい韓国料理を提供を込めて温かみのある暖色のイエローベースでメニューを作成し、全体が見やすくなるように細かい配置にも気を遣いました</div>
+                    <div class="works_contents_info_sh">落ちついた雰囲気のお店でもあるのでブラウンの色味と３０代女性ターゲットということで落ちついたピンクベージュを背景に配置し、お店の雰囲気と合わせデザインしました</div>
                 <div class="works_contents_sh"><div class="works_contents_item_category_sh">使用ツール</div>
                     <div class="works-line_sh"></div></div>
                     <div class="works_contents_info_sh">Illustrator・Photoshop</div>
@@ -108,12 +133,12 @@
                     <div class="works-line_sh"></div></div>
                     <div class="works_contents_info_sh">1週間</div>
                 </div>
-            <div class="backtoall">
-                <img src="Photo/BACKTOALL@2x.png" alt="backtoall" />
-            </div>
-
+                <div class="backtoall">
+                    <img src="Photo/BACKTOALL@2x.png" alt="backtoall" />
+                </div>
 
         </section>
+
         <footer class="footer-pc">
             <div class="footer-inner">
                 <nav class="footer-nav">
@@ -157,7 +182,6 @@
             <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
         </footer>
-        
         <script>
             (function (d) {
                 var config = {
@@ -244,18 +268,19 @@
                 },
             });
         </script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-          const meishiSwiper = new Swiper('.meishi_swiper', {
-            loop: false, 
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 0,
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-          });
-        </script>
+               <script>
+                $(function () {
+                  var prevArrow = document.querySelector('.swiper1-button-prev');
+                  var nextArrow = document.querySelector('.swiper1-button-next');
+              
+                  $('.works_flyer_slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: prevArrow,
+                    nextArrow: nextArrow,
+                    infinite: true
+                  });
+                });
+              </script>
     </body>
 </html>
