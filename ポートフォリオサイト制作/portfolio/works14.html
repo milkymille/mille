@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>works</title>
         <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -14,11 +19,11 @@
                 </h1>
                 <nav class="pc-nav">
                     <ul>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu-item"><a href="skills.html">SKILLS</a></li>
+                        <li class="menu-item"><a href="works.html">WORKS</a></li>
+                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger"><span></span><span></span><span></span></div>
@@ -35,13 +40,35 @@
         </header>
         <section class="works2-1">
             <h4 class="works_title">美容室【Recares】LOGOデザイン</h4>
-            <div class="works_flyer1_wrap">
+
+            <div class="meishi_slide_wrap">
+                <div class="meishi_slider">
+      
+                    <!-- スライド1：名刺の表＋裏 -->
+                    <div class="works_flyer1_wrap">
                
-            <div class="logo_photo">
-                <img src="Photo/recares@2x.png" alt="meishi" />
-            </div>
-            
-           </div>
+                        <div class="logo_photo">
+                            <img src="Photo/recares@2x.png" alt="meishi" />
+                        </div>
+                         </div>
+    
+                    <!-- スライド2：ロゴ説明 -->
+                    <div class="works_flyer1_wrap">
+                            <div class="logo_meaning">
+                              <img src="Photo/recareslogo@2x.png" alt="logo" />
+                            </div>
+                          </div>  </div>
+                    <!-- 矢印 -->
+                    <div class="meishi-prev">
+                        <img src="Photo/yazirushi3@2x.png" alt="prev arrow" />
+                         </div>
+                        <div class="meishi-next">
+                        <img src="Photo/yazirushi4@2x.png" alt="next arrow" />
+                        </div>
+                    </div>
+    
+         
+
             <div class="works_contents_wrap">
                 <ul class="works_contents">
                     <li class="works_contents_item"><span class="works_contents_item_category">
@@ -107,6 +134,7 @@
 
         </section>
         <footer class="footer-pc">
+            <div class="footer_top_line"></div>
             <div class="footer-inner">
                 <nav class="footer-nav">
                     <ul>
@@ -120,8 +148,11 @@
                 </nav>
 
                 <div class="footer-right">
-                    <span>FIND US ON</span>
-                    <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    <div class="finduson">
+                    <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
                 </div>
             </div>
             <div class="footer_bottom_line"></div>
@@ -129,22 +160,25 @@
         </footer>
 
         <footer class="footer-sp">
+            <div class="footer_top_line_nav-sp"></div>
             <div class="footer-inner_sp">
                 <nav class="footer_nav-sp">
                     <ul>
-                        <li><a href="#TOP">TOP</a></li>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="#TOP">TOP</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="#ABOUT">ABOUT</a></li>
+                        <li class="menu-item"><a href="#SKILLS">SKILLS</a></li>
+                        <li class="menu-item"><a href="#WORKS">WORKS</a></li>
+                        <li class="menu-item"><a href="#CONTACT">CONTACT</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer-right_nav-sp">
-                    <span>FIND US ON</span>
-                    <img src="Photo/instagram@2x.png" alt="Instagram" />
-                </div>
+                    <div class="finduson">
+                        <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
             </div>
             <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
@@ -226,15 +260,16 @@
                         .classList.toggle("active");
                 });
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
-            const swiper = new Swiper(".swiper", {
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
+            $(function () {
+              $('.meishi_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                prevArrow: $('.meishi-prev'),
+                nextArrow: $('.meishi-next')
+              });
             });
-        </script>
+          </script>
     </body>
 </html>

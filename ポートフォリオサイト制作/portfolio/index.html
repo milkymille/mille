@@ -5,12 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mill Design portfolio site</title>
         <link rel="stylesheet" href="css/style.css" />
+        
 
         <!-- Slick JS -->
         <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
         ></script>
+        <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
         <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
@@ -26,20 +28,29 @@
             type="text/css"
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
+        
     </head>
     <body>
+        <body class="fade-in">
+        <div id="loading-screen">
+            <div class="loading-content">
+              <img src="Photo/kajiwa@2x.png" alt="Loading" class="loading-image" />
+              <div class="loading-text" id="loading-text">Now Loading...</div>
+            </div>
+          </div>
         <header class="header" id="header">
             <div class="header-wrap">
-                <h1 class="logo">
+                <a href="#header">
+                <h1 class="logo" id="TOP">
                     <img src="Photo/logo_white.png" alt="mill_logo" />
-                </h1>
+                </h1></a>
                 <nav class="pc-nav">
                     <ul>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#about.html">ABOUT</a></li>
-                        <li><a href="#skills.html">SKILLS</a></li>
-                        <li><a href="#works.html">WORKS</a></li>
-                        <li><a href="#contact.html">CONTACT</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu-item"><a href="skills.html">SKILLS</a></li>
+                        <li class="menu-item"><a href="works.html">WORKS</a></li>
+                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger" id="hamburger">
@@ -49,12 +60,18 @@
                 </div>
                 <nav class="sp-nav">
                     <ul>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#about.html">ABOUT</a></li>
-                        <li><a href="#skills.html">SKILLS</a></li>
-                        <li><a href="#works.html">WORKS</a></li>
-                        <li><a href="#contact.html">CONTACT</a></li>
+                        <li><a href="CONCEPT">CONCEPT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
+                    <div class="ham_insta">
+                    <div class="finduson_ham">
+                        <span>FIND US ON</span></div>
+                    <div class="instaicon_ham">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div></div>
                 </nav>
             </div>
             <div class="header_photo">
@@ -65,11 +82,11 @@
                     />
                     <img src="Photo/header.png" alt="海の写真" />
                 </picture>
-
+                
                 <p class="word">心に届ける<br /><br />想いをカタチに</p>
             </div>
         </header>
-
+        <main>
         <section class="concept" id="CONCEPT">
             <h2 class="concept_word_img fade-in">
                 <img src="Photo/Concept.png" alt="content" />
@@ -87,6 +104,9 @@
                 そんな想いを乗せてポートフォリオを作成いたしました
             </div>
         </section>
+
+      
+      
 
         <section class="about" id="ABOUT">
             <h2 class="about_word_img fade-in">
@@ -116,6 +136,8 @@
                   <img src="Photo/viewmore.png" alt="view more" />
                 </div>
               </a>
+
+        
         </section>
 
         <section class="skills" id="SKILLS">
@@ -126,17 +148,17 @@
             <div class="skills_photo_wrap">
                 <div class="skills_list">
                     <p class="skills_photo">
-                        <img src="Photo/graphic.png" alt="graphic" />
+                        <img src="Photo/graphic.png" alt="graphic" class="bounce-image" />
                     </p>
                 </div>
                 <div class="skills_photo_list">
                     <p class="skills_photo">
-                        <img src="Photo/Web.png" alt="web" />
+                        <img src="Photo/Web.png" alt="web" class="bounce-image" />
                     </p>
                 </div>
                 <div class="skills_photo_list">
                     <p class="skills_photo">
-                        <img src="Photo/coding.png" alt="coding" />
+                        <img src="Photo/coding.png" alt="coding"  class="bounce-image"/>
                     </p>
                 </div>
             </div>
@@ -168,43 +190,64 @@
 
             <!-- PC版ギャラリー -->
 
+
+
             <div class="carousel_inner">
-                <div class="carousel_item">
-                    <a
+ 
+    
+
+                    <div class="carousel_item">
+                      <a
                         href="Photo/hamburger_POP@2x.png"
                         data-lightbox="carousel_item_big"
                         data-title="ハンバーガーバナー"
-                    >
+                        class="image-overlay-wrapper"
+                      >
                         <img
-                            src="Photo/hamburger_POP@2x.png"
-                            class="img-gallery"
-                            alt="ハンバーガーバナー"
-                    /></a>
-                </div>
-                <div class="carousel_item">
-                    <a
+                          src="Photo/hamburger_POP@2x.png"
+                          class="img-gallery"
+                          alt="ハンバーガーバナー"
+                        />
+                        <div class="mask">
+                        <div class="overlay-text">激旨バーガー新発売<br>BANNER/Design</div>
+                    </div> </a>
+                    </div>
+                  
+                    <div class="carousel_item">
+                      <a
                         href="Photo/hamburger_1@2x.png"
                         data-lightbox="carousel_item_big"
                         data-title="ハンバーガーバナー"
-                    >
+                        class="image-overlay-wrapper"
+                      >
                         <img
-                            src="Photo/hamburger_1@2x.png"
-                            class="img-gallery"
-                            alt="ハンバーガーバナー"
-                    /></a>
-                </div>
-                <div class="carousel_item">
-                    <a
+                          src="Photo/hamburger_1@2x.png"
+                          class="img-gallery"
+                          alt="ハンバーガーバナー"
+                        /> <div class="mask">
+                            <div class="overlay-text">激旨バーガー新発売<br>BANNER/Design</div>
+                        </div>
+                      </a>
+                    </div>
+                  
+                    <div class="carousel_item">
+                      <a
                         href="Photo/ice@2x.png"
                         data-lightbox="carousel_item_big"
                         data-title="アイスバナー"
-                    >
+                        class="image-overlay-wrapper"
+                      >
                         <img
-                            src="Photo/ice@2x.png"
-                            class="img-gallery"
-                            alt="アイスバナー"
-                    /></a>
-                </div>
+                          src="Photo/ice@2x.png"
+                          class="img-gallery"
+                          alt="アイスバナー"
+                        />
+                        <div class="mask">
+                            <div class="overlay-text">アイスクリーム<br>BANNER/Design</div>
+                        </div>
+                      </a>
+                    </div>
+                  
                 <div class="carousel_item">
                     <a
                         href="Photo/salonLP@2x.png"
@@ -215,7 +258,9 @@
                             src="Photo/salonLP@2x.png"
                             class="img-gallery"
                             alt="美容室LP"
-                    /></a>
+                    />  <div class="mask">
+                        <div class="overlay-text">美容室<br>Web Site/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -228,7 +273,9 @@
                             class="img-gallery"
                             alt="ヘアケアLP"
                         />
-                    </a>
+                        <div class="mask">
+                            <div class="overlay-text">ヘアケアブランド<br>Landing page/Design</div>
+                        </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -240,7 +287,9 @@
                             src="Photo/cafe@2x.png"
                             class="img-gallery"
                             alt="カフェ"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">カフェ<br>Web Site/コーディング</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -252,7 +301,9 @@
                             src="Photo/sp@2x.png"
                             class="img-gallery"
                             alt="スマホバナー"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">携帯学割プラン<br>BANNER/Trace</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -264,7 +315,9 @@
                             src="Photo/working@2x.png"
                             class="img-gallery"
                             alt="コワーキング"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">コワーキングスペース<br>Web Site/Trace</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -276,7 +329,23 @@
                             src="Photo/flyer@2x.png"
                             class="img-gallery"
                             alt="flyer"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">美容室Opening Campaign<br>FLYER/Design</div>
+                    </div></a>
+                </div>
+                <div class="carousel_item">
+                    <a
+                        href="Photo/satou@2x.png"
+                        data-lightbox="carousel_item_big"
+                        data-title="flyer"
+                    >
+                        <img
+                            src="Photo/satou@2x.png"
+                            class="img-gallery"
+                            alt="flyer"
+                    /> <div class="mask">
+                        <div class="overlay-text">佐藤建設<br>BUSINESS CARD ＆ LOGO/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -288,7 +357,9 @@
                             src="Photo/RAN@2x.png"
                             class="img-gallery"
                             alt="ショップカード"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">カステラショップ蘭<br>LSHOP CARD ＆ LOGO/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -300,7 +371,9 @@
                             src="Photo/HAYASHI@2x.png"
                             class="img-gallery"
                             alt="ショップカード"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">かりんとうショップ<br>SHOP CARD/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -312,7 +385,9 @@
                             src="Photo/omoni_menu.png"
                             class="img-gallery"
                             alt="メニュー表"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">韓国料理屋<br>MENU & LOGO/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -324,7 +399,9 @@
                             src="Photo/recruit_@2x.png"
                             class="img-gallery"
                             alt="フライヤー"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">美容室求人<br>FLYER/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -336,7 +413,9 @@
                             src="Photo/CAFEMEN U@2x.png"
                             class="img-gallery"
                             alt="カフェメニュー"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">カフェ<br>MENU/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -348,7 +427,9 @@
                             src="Photo/ciel@2x.png"
                             class="img-gallery"
                             alt="shop Card"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">ベーカリーショップ<br>SHOP CARD ＆ LOGO/Design</div>
+                    </div></a>
                 </div>
                 <div class="carousel_item">
                     <a
@@ -360,7 +441,9 @@
                             src="Photo/SALON＿LOGO@2x.png"
                             class="img-gallery"
                             alt="美容室Logo"
-                    /></a>
+                    /> <div class="mask">
+                        <div class="overlay-text">美容室<br>LOGO/Design</div>
+                    </div></a>
                 </div>
             </div>
             <a href="works.html">
@@ -391,10 +474,10 @@
                     <ul>
                         <li><a href="#TOP">TOP</a></li>
                         <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
 
@@ -417,10 +500,10 @@
                     <ul>
                         <li class="menu-item"><a href="#TOP">TOP</a></li>
                         <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
-                        <li class="menu-item"><a href="#ABOUT">ABOUT</a></li>
-                        <li class="menu-item"><a href="#SKILLS">SKILLS</a></li>
-                        <li class="menu-item"><a href="#WORKS">WORKS</a></li>
-                        <li class="menu-item"><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu-item"><a href="skills.html">SKILLS</a></li>
+                        <li class="menu-item"><a href="works.html">WORKS</a></li>
+                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
 
@@ -433,7 +516,7 @@
             </div>
             <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
-        </footer>
+        </footer></main>
         <script>
             $(document).ready(function () {
                 $(".skills-slider").slick({
@@ -527,21 +610,22 @@
           </script>
 
 
-<script>// スクロール時に画像が表示されるかチェックする関数
+<script>
     function checkScroll() {
       const images = document.querySelectorAll('.fade-in');
     
       images.forEach(image => {
-        const rect = image.getBoundingClientRect(); // 画像の位置を取得
+        const rect = image.getBoundingClientRect(); 
         if (rect.top < window.innerHeight && rect.bottom > 0) {
-          // 画像がビューポート内に表示された場合
+          
           image.classList.add('show');
         }
       });
     }
-    
-    // ページ読み込み時とスクロール時に関数を実行
     window.addEventListener('load', checkScroll);
     window.addEventListener('scroll', checkScroll);</script>
+    <script src="script.js"></script>
+
+</body>
     </body>
 </html>

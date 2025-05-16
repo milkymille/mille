@@ -14,11 +14,11 @@
                 </h1>
                 <nav class="pc-nav">
                     <ul>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu-item"><a href="skills.html">SKILLS</a></li>
+                        <li class="menu-item"><a href="works.html">WORKS</a></li>
+                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger" id="hamburger">
@@ -38,32 +38,39 @@
         <section class="works2">
             <div class="works_top" id="works_top">
                 <h2 class="works_word2">
-                    <img src="Photo/works.png" alt="works" />
+                    <img src="Photo/works_@2x.png" alt="works" />
                 </h2>
+
+            
+
                 <div class="works_top_inner">
-                    <h3 class="webdesign_word1">
+                        <button class="webdesign_word_all" data-filter="all">
                         <img
-                            src="Photo/works_Web Design@2x.png"
+                            src="Photo/alll@2x.png"
                             alt="webdesign"
-                        />
-                    </h3>
-                    <h3 class="graphicdesign_word1">
+                        /></button>
+                        <button class="webdesign_word1" data-filter="web">
                         <img
-                            src="Photo/Works_Graphic Design@2x.png"
+                            src="Photo/wede@2x.png"
+                            alt="webdesign"
+                        /></button>
+                        <button class="graphicdesign_word1" data-filter="graphic">
+                        <img
+                            src="Photo/grde@2x.png"
                             alt="graphicdesign"
                         />
-                    </h3>
+                    </button>
                 </div>
             </div>
 
             <h3 class="webdesign_word2">
                 <img src="Photo/works_Web Design@2x.png" alt="webdesign" />
             </h3>
-            <div class="webdesign_wrap">
+            <div class="webdesign_wrap" data-category="web">
                 <ul class="image-list">
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/hamburger_POP@2x.png"
                                     alt="hamburgerpop"
@@ -75,7 +82,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/hamburger_1@2x.png"
                                     alt="hamburger"
@@ -87,7 +94,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/ice@2x.png" alt="hairsalon" />
                             </div>
                             <p class="work-title">アイスクリーム新発売</p>
@@ -96,7 +103,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/salonLP@2x.png"
                                     alt="hamburgerpop"
@@ -108,7 +115,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/shampoo LP@2x.png"
                                     alt="ヘアケアLP"
@@ -120,7 +127,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/cafe@2x.png" alt="CAFESITE" />
                             </div>
                             <p class="work-title">カフェ</p>
@@ -129,7 +136,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/sp@2x.png" alt="バナー" />
                             </div>
                             <p class="work-title">携帯学割プラン</p>
@@ -138,7 +145,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/working@2x.png"
                                     alt="Web Site/Trace"
@@ -157,11 +164,11 @@
                     alt="graphicdesign"
                 />
             </h3>
-            <div class="graphicdesign_wrap">
+            <div class="graphicdesign_wrap" data-category="graphic">
                 <ul class="image-list">
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/flyer@2x.png" alt="FLYER" />
                             </div>
                             <p class="work-title">美容室Opening Campaign</p>
@@ -170,7 +177,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/satou@2x.png" alt="hamburger" />
                             </div>
                             <p class="work-title">佐藤建設</p>
@@ -179,7 +186,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/RAN@2x.png" alt="hairsalon" />
                             </div>
                             <p class="work-title">カステラショップ蘭</p>
@@ -188,7 +195,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/HAYASHI@2x.png"
                                     alt="SHOP CARD"
@@ -200,7 +207,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/omoni_menu.png"
                                     alt="hamburger"
@@ -212,7 +219,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/recruit_@2x.png"
                                     alt="hairsalon"
@@ -224,7 +231,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/CAFEMEN U@2x.png"
                                     alt="hamburgerpop"
@@ -236,7 +243,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img src="Photo/ciel@2x.png" alt="shop Card" />
                             </div>
                             <p class="work-title">ベーカリーショップ</p>
@@ -245,7 +252,7 @@
                     </li>
                     <li>
                         <div class="work-item">
-                            <div class="work-item_photo">
+                            <div class="work-item_photo zoom-image">
                                 <img
                                     src="Photo/SALON＿LOGO@2x.png"
                                     alt="hairsalonLOGO"
@@ -260,6 +267,7 @@
         </section>
 
         <footer class="footer-pc">
+            <div class="footer_top_line"></div>
             <div class="footer-inner">
                 <nav class="footer-nav">
                     <ul>
@@ -273,8 +281,11 @@
                 </nav>
 
                 <div class="footer-right">
-                    <span>FIND US ON</span>
-                    <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    <div class="finduson">
+                    <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
                 </div>
             </div>
             <div class="footer_bottom_line"></div>
@@ -282,22 +293,25 @@
         </footer>
 
         <footer class="footer-sp">
+            <div class="footer_top_line_nav-sp"></div>
             <div class="footer-inner_sp">
                 <nav class="footer_nav-sp">
                     <ul>
-                        <li><a href="#TOP">TOP</a></li>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="#TOP">TOP</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="#ABOUT">ABOUT</a></li>
+                        <li class="menu-item"><a href="#SKILLS">SKILLS</a></li>
+                        <li class="menu-item"><a href="#WORKS">WORKS</a></li>
+                        <li class="menu-item"><a href="#CONTACT">CONTACT</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer-right_nav-sp">
-                    <span>FIND US ON</span>
-                    <img src="Photo/instagram@2x.png" alt="Instagram" />
-                </div>
+                    <div class="finduson">
+                        <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
             </div>
             <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>

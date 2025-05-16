@@ -14,11 +14,11 @@
                 </h1>
                 <nav class="pc-nav">
                     <ul>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu-item"><a href="skills.html">SKILLS</a></li>
+                        <li class="menu-item"><a href="works.html">WORKS</a></li>
+                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger" id="hamburger">
@@ -44,7 +44,11 @@
                 >どうぞお気軽にお問い合わせください。
             </p>
             <div class="contact_warp">
-                <form action="" method="post">
+               
+                <form action=" https://docs.google.com/forms/u/1/d/1cQ2yJtE0z6u7kzo3E7nvb_entfxQN12hzr3WR4b4SPM/previewResponse" 
+                method="post"
+                target="hidden_iframe"
+                onsubmit="submitted=true;">
                     <div class="form_item">
                         <div class="label">
                             <label for="name">氏名</label>
@@ -52,7 +56,7 @@
                         <input
                             type="text"
                             id="name"
-                            name="name"
+                            name="entry.20446268"
                             placeholder="氏名"
                             required
                         />
@@ -64,7 +68,7 @@
                         <input
                             type="text"
                             id="name_kana"
-                            name="name"
+                            name="entry.2052826256"
                             placeholder="フリガナ"
                             required
                         />
@@ -73,7 +77,7 @@
                         <div class="label">
                             <label for="question">種別</label>
                         </div>
-                        <select id="question" name="question" required>
+                        <select id="question" name="entry.1223647708" required>
                             <option value="" disabled selected>
                                 選択してください
                             </option>
@@ -89,7 +93,7 @@
                         <input
                             type="email"
                             id="email"
-                            name="email"
+                            name="entry.1383788165"
                             placeholder="メールアドレス"
                             required
                         />
@@ -101,7 +105,7 @@
                         <textarea
                             type="inquiry"
                             id="inquiry"
-                            name="inquiry"
+                            name="entry.578840844"
                             placeholder="問い合わせ内容入力"
                             required
                         ></textarea>
@@ -112,10 +116,22 @@
                         </button>
                     </div>
                 </form>
+                <script type="text/javascript">
+                    var submitted = false;
+                  </script>
+                  <iframe
+                    name="hidden_iframe"
+                    id="hidden_iframe"
+                    style="display: none"
+                    onload="if(submitted)  {window.location='thanks.html';}"
+                  ></iframe>
+                  
+                  
             </div>
         </section>
 
         <footer class="footer-pc">
+            <div class="footer_top_line"></div>
             <div class="footer-inner">
                 <nav class="footer-nav">
                     <ul>
@@ -129,8 +145,11 @@
                 </nav>
 
                 <div class="footer-right">
-                    <span>FIND US ON</span>
-                    <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    <div class="finduson">
+                    <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
                 </div>
             </div>
             <div class="footer_bottom_line"></div>
@@ -138,22 +157,25 @@
         </footer>
 
         <footer class="footer-sp">
+            <div class="footer_top_line_nav-sp"></div>
             <div class="footer-inner_sp">
                 <nav class="footer_nav-sp">
                     <ul>
-                        <li><a href="#TOP">TOP</a></li>
-                        <li><a href="#CONCEPT">CONCEPT</a></li>
-                        <li><a href="#ABOUT">ABOUT</a></li>
-                        <li><a href="#SKILLS">SKILLS</a></li>
-                        <li><a href="#WORKS">WORKS</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
+                        <li class="menu-item"><a href="#TOP">TOP</a></li>
+                        <li class="menu-item"><a href="#CONCEPT">CONCEPT</a></li>
+                        <li class="menu-item"><a href="#ABOUT">ABOUT</a></li>
+                        <li class="menu-item"><a href="#SKILLS">SKILLS</a></li>
+                        <li class="menu-item"><a href="#WORKS">WORKS</a></li>
+                        <li class="menu-item"><a href="#CONTACT">CONTACT</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer-right_nav-sp">
-                    <span>FIND US ON</span>
-                    <img src="Photo/instagram@2x.png" alt="Instagram" />
-                </div>
+                    <div class="finduson">
+                        <span>FIND US ON</span></div>
+                    <div class="instaicon">
+                        <img src="Photo/instagram@2x.png" alt="Instagram" />
+                    </div>
             </div>
             <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
